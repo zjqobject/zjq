@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.10">
+    <root id="1">
+      <ServerVersion>11.2.0.2</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="SCOTT">
+      <ObjectId>50</ObjectId>
+      <IntrospectionTimestamp>2018-10-20.00:22:11</IntrospectionTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="SYSTEM">
+      <ObjectId>5</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="OUTLN">
+      <ObjectId>9</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="DIP">
+      <ObjectId>14</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="ORACLE_OCM">
+      <ObjectId>21</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="DBSNMP">
+      <ObjectId>29</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="APPQOSSYS">
+      <ObjectId>30</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="CTXSYS">
+      <ObjectId>32</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="XDB">
+      <ObjectId>34</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="ANONYMOUS">
+      <ObjectId>35</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="MDSYS">
+      <ObjectId>42</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="HR">
+      <ObjectId>43</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="FLOWS_FILES">
+      <ObjectId>44</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="APEX_PUBLIC_USER">
+      <ObjectId>45</ObjectId>
+    </schema>
+    <schema id="18" parent="1" name="APEX_040000">
+      <ObjectId>47</ObjectId>
+    </schema>
+    <schema id="19" parent="1" name="ZJQ">
+      <ObjectId>48</ObjectId>
+      <IntrospectionTimestamp>2018-10-20.00:21:52</IntrospectionTimestamp>
+      <CreatedTimestamp>2018-10-16.19:00:26</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-18.18:20:17</ModifiedTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="20" parent="1" name="XS$NULL">
+      <ObjectId>2147483638</ObjectId>
+    </schema>
+    <sequence id="21" parent="19" name="SEQ_EM">
+      <ObjectId>20165</ObjectId>
+      <CreatedTimestamp>2018-10-18.06:30:05</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-18.06:30:05</ModifiedTimestamp>
+      <SequenceIdentity>1..99999999</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>-2147483648</CacheSize>
+    </sequence>
+    <sequence id="22" parent="19" name="USER_SEQ">
+      <ObjectId>20152</ObjectId>
+      <CreatedTimestamp>2018-10-16.19:00:26</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-16.19:00:26</ModifiedTimestamp>
+      <SequenceIdentity>1..999999</SequenceIdentity>
+    </sequence>
+    <table id="23" parent="19" name="T_BUYCAR">
+      <ObjectId>20156</ObjectId>
+      <CreatedTimestamp>2018-10-17.01:04:51</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-17.01:04:51</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="24" parent="19" name="T_EMPLOYEE">
+      <ObjectId>20160</ObjectId>
+      <CreatedTimestamp>2018-10-18.04:24:58</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-18.18:20:17</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="25" parent="19" name="T_GOOD">
+      <ObjectId>20154</ObjectId>
+      <CreatedTimestamp>2018-10-17.00:21:32</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-17.11:38:32</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="26" parent="19" name="T_USER">
+      <ObjectId>20153</ObjectId>
+      <CreatedTimestamp>2018-10-17.00:07:26</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-17.00:07:26</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="27" parent="19" name="T_USERDETAIL">
+      <ObjectId>20155</ObjectId>
+      <CreatedTimestamp>2018-10-17.00:31:33</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-17.00:31:33</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <view id="28" parent="19" name="VIEW_TEMP">
+      <ObjectId>20246</ObjectId>
+      <SourceTextLength>42</SourceTextLength>
+      <DependsOnIds>20160</DependsOnIds>
+      <CreatedTimestamp>2018-10-18.18:00:17</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-18.18:00:17</ModifiedTimestamp>
+      <Modifiable>1</Modifiable>
+    </view>
+    <column id="29" parent="23" name="B_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="23" name="B_UID">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="23" name="B_GID">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="32" parent="23" name="B_GCOUNT">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="24" name="EMPNO">
+      <Position>1</Position>
+      <DataType>NUMBER(4 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="24" name="ENAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="24" name="JOB">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="24" name="MGR">
+      <Position>4</Position>
+      <DataType>NUMBER(4 digit)|0s</DataType>
+    </column>
+    <column id="37" parent="24" name="HIREDATE">
+      <Position>5</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="38" parent="24" name="SAL">
+      <Position>6</Position>
+      <DataType>NUMBER(4 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="24" name="COMM">
+      <Position>7</Position>
+      <DataType>NUMBER(4 digit)|0s</DataType>
+    </column>
+    <column id="40" parent="24" name="DEPTNO">
+      <Position>8</Position>
+      <DataType>NUMBER(4 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="41" parent="24" name="EMP_INDEX">
+      <ObjectId>20247</ObjectId>
+      <CreatedTimestamp>2018-10-18.18:20:17</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-18.18:20:17</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>ENAME</ColNames>
+    </index>
+    <trigger id="42" parent="24" name="AUTOINCREMENT">
+      <ObjectId>20166</ObjectId>
+      <SourceTextLength>65</SourceTextLength>
+      <DependsOnIds>117,20165</DependsOnIds>
+      <CreatedTimestamp>2018-10-18.06:32:58</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-18.06:32:58</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+      <Condition>NEW.EMPNO IS NULL</Condition>
+    </trigger>
+    <trigger id="43" parent="24" name="TR_EM">
+      <ObjectId>20245</ObjectId>
+      <SourceTextLength>191</SourceTextLength>
+      <DependsOnIds>1255</DependsOnIds>
+      <CreatedTimestamp>2018-10-18.09:31:16</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-18.09:31:16</ModifiedTimestamp>
+      <Events>IUD</Events>
+      <Turn>before-stmt</Turn>
+    </trigger>
+    <column id="44" parent="25" name="G_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="25" name="G_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="25" name="G_PRICE">
+      <Position>3</Position>
+      <DataType>NUMBER(20,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>NULL</DefaultExpression>
+    </column>
+    <column id="47" parent="25" name="G_TYPE">
+      <Position>4</Position>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="25" name="G_DESCRIPTION">
+      <Position>5</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="25" name="G_FACTORY">
+      <Position>6</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="50" parent="25" name="G_STATE">
+      <Position>7</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="26" name="U_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="26" name="U_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="26" name="U_PASS">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="26" name="U_SEX">
+      <Position>4</Position>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="27" name="UD_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="56" parent="27" name="UD_RECEIVER">
+      <Position>2</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="27" name="UD_PHONE">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="27" name="G_TYPE">
+      <Position>4</Position>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="27" name="UD_ADDRESS">
+      <Position>5</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="60" parent="27" name="UD_UID">
+      <Position>6</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="28" name="AVGSAL">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="62" parent="28" name="SUMSAL">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+  </database-model>
+</dataSource>
