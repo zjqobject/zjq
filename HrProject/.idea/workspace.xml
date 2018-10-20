@@ -6,31 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1407f90-1e89-40ef-924c-8500196d1a36" name="Default Changelist" comment="ss">
-      <change afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/showresume.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/web/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/web/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/web/js/jquery-1.11.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/web/js/jquery-3.2.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/web/js/jquery-validate.js" afterDir="false" />
+    <list default="true" id="d1407f90-1e89-40ef-924c-8500196d1a36" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/20c56855-9399-4e38-b4a8-b7a648952763.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b1337e6b-b73f-4083-8b0a-35cf658c999c.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/WEB-INF/classes/com/jun/Controller/VistorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/WEB-INF/classes/com/jun/Controller/VistorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/WEB-INF/classes/com/jun/mapper/VistorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/WEB-INF/classes/com/jun/mapper/VistorMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/WEB-INF/classes/com/jun/model/Vistor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/WEB-INF/classes/com/jun/model/Vistor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/Controller/VistorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/Controller/VistorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/dao/VistorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/dao/VistorDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/mapper/VistorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/mapper/VistorMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/service/VistorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/VistorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/service/VistorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/VistorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jun/Controller/VistorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jun/Controller/VistorController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jun/mapper/VistorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jun/mapper/VistorMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jun/model/Vistor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jun/model/Vistor.class" afterDir="false" />
@@ -132,7 +110,7 @@
           <entry key="jsp" value="1188" />
           <entry key="properties" value="155" />
           <entry key="sql" value="107" />
-          <entry key="txt" value="2" />
+          <entry key="txt" value="19" />
           <entry key="xml" value="524" />
         </counts>
       </usages-collector>
@@ -141,7 +119,7 @@
           <entry key="CSS" value="22" />
           <entry key="JAVA" value="611" />
           <entry key="JSP" value="1188" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="19" />
           <entry key="Properties" value="155" />
           <entry key="SQL" value="27" />
           <entry key="Scratch" value="83" />
@@ -164,8 +142,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/web/js/jquery-validate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3864">
-              <caret line="263" column="45" selection-start-line="263" selection-start-column="45" selection-end-line="263" selection-end-column="45" />
+            <state relative-caret-position="920">
+              <caret line="105" column="29" lean-forward="true" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -304,9 +282,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="134" />
-    <option name="y" value="-18" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="107" />
+    <option name="y" value="10" />
     <option name="width" value="1147" />
     <option name="height" value="775" />
   </component>
@@ -573,18 +551,26 @@
       <workItem from="1539914857931" duration="14497000" />
       <workItem from="1539934043894" duration="560000" />
       <workItem from="1539934703583" duration="34251000" />
-      <workItem from="1539997872436" duration="512000" />
+      <workItem from="1539997872436" duration="840000" />
     </task>
+    <task id="LOCAL-00001" summary="登录注册界面css写完">
+      <created>1539998696401</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539998696401</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49820000" />
+    <option name="totallyTimeSpent" value="50148000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="107" y="10" width="1147" height="775" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29954615" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36430544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -607,7 +593,7 @@
       <window_info anchor="bottom" id="Messages" order="12" weight="0.5784615" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.32923076" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -616,7 +602,7 @@
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32980332" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.017397882" />
+      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.021159153" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29500756" />
@@ -661,7 +647,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="登录注册界面css写完" />
+    <option name="LAST_COMMIT_MESSAGE" value="登录注册界面css写完" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -757,6 +744,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -858,8 +849,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/web/js/jquery-validate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3864">
-          <caret line="263" column="45" selection-start-line="263" selection-start-column="45" selection-end-line="263" selection-end-column="45" />
+        <state relative-caret-position="920">
+          <caret line="105" column="29" lean-forward="true" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
         </state>
       </provider>
     </entry>
