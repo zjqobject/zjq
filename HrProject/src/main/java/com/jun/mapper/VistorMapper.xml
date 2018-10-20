@@ -6,7 +6,7 @@
 
 
     <insert id="addVistor">
-        insert into T_VISTOR values (VIS_SEQ.nextval,#{0,jdbcType=VARCAHR},#{1,jdbcType=VARCAHR})
+        insert into T_VISTOR values (VIS_SEQ.nextval,#{v_name},#{v_pass})
     </insert>
 
     <select id="getVistor" resultType="com.jun.model.Vistor">

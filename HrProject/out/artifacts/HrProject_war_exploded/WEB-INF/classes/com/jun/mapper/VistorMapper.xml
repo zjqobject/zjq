@@ -5,9 +5,10 @@
 <mapper namespace="com.jun.dao.VistorDao">
 
 
-    <insert id="addVistor" parameterType="com.jun.dao.VistorDao">
-        insert into  T_VISTOR  values (#{v_id},#{v_name},#{v_pass})
+    <insert id="addVistor">
+        insert into T_VISTOR values (VIS_SEQ.nextval,#{v_name},#{v_pass})
     </insert>
+
     <select id="getVistor" resultType="com.jun.model.Vistor">
         select * from T_VISTOR
         <where>
