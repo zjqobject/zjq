@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jun.dao.RecruitDao">
+
+    <insert id="addRecruit">
+          insert  into  T_RECRUIT values (RECRUIT_SEQ.nextval,RE_SALARYLOW)
+    </insert>
+
+    <select id="getRecruitListAll" parameterType="Map" resultType="com.jun.model.Recruit">
+        select a.* from ( select T_RECRUIT.* ,rownum rn from T_RECRUIT where rownum &lt;=#{end})a where rn &gt;=#{open}
+    </select>
+    <select id="getRecruitAll" resultType="com.jun.model.Recruit">
+        select *from  T_RECRUIT
+    </select>
+</mapper>

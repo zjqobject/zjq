@@ -6,9 +6,9 @@
     </root>
     <schema id="2" parent="1" name="SCOTT">
       <ObjectId>50</ObjectId>
-      <IntrospectionTimestamp>2018-10-20.01:31:28</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-10-20.23:30:33</IntrospectionTimestamp>
       <CreatedTimestamp>2018-10-19.20:49:04</CreatedTimestamp>
-      <ModifiedTimestamp>2018-10-20.01:31:27</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-10-20.23:30:33</ModifiedTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -66,34 +66,188 @@
     <schema id="20" parent="1" name="XS$NULL">
       <ObjectId>2147483638</ObjectId>
     </schema>
-    <sequence id="21" parent="2" name="VIS_SEQ">
+    <sequence id="21" parent="2" name="RECRUIT_SEQ">
+      <ObjectId>20346</ObjectId>
+      <CreatedTimestamp>2018-10-20.18:59:11</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-20.18:59:11</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="22" parent="2" name="VIS_SEQ">
       <ObjectId>20253</ObjectId>
       <CreatedTimestamp>2018-10-19.20:49:04</CreatedTimestamp>
       <ModifiedTimestamp>2018-10-19.20:49:04</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <table id="22" parent="2" name="T_VISTOR">
+    <table id="23" parent="2" name="T_RECRUIT">
+      <ObjectId>20345</ObjectId>
+      <CreatedTimestamp>2018-10-20.18:29:49</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-20.23:30:33</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="24" parent="2" name="T_RESUME">
+      <ObjectId>20343</ObjectId>
+      <CreatedTimestamp>2018-10-20.18:21:56</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-20.18:57:48</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="25" parent="2" name="T_VISTOR">
       <ObjectId>20256</ObjectId>
       <CreatedTimestamp>2018-10-20.01:30:41</CreatedTimestamp>
       <ModifiedTimestamp>2018-10-20.01:31:27</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <column id="23" parent="22" name="V_ID">
+    <column id="26" parent="23" name="RE_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="24" parent="22" name="V_NAME">
+    <column id="27" parent="23" name="RE_SALARYLOW">
       <Position>2</Position>
-      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
     </column>
-    <column id="25" parent="22" name="V_PASS">
+    <column id="28" parent="23" name="RE_EDUCATION">
       <Position>3</Position>
       <DataType>VARCHAR2(20 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="26" parent="22" name="SYS_C007052">
+    <column id="29" parent="23" name="RE_YEARS">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="23" name="RE_WELFARE">
+      <Position>5</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="23" name="RE_SALARYTOP">
+      <Position>6</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="32" parent="23" name="RE_POSITION">
+      <Position>7</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="23" name="RE_NEEDS">
+      <Position>8</Position>
+      <DataType>VARCHAR2(200 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="24" name="R_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="24" name="R_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="24" name="R_SEX">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="24" name="R_COLLEGE">
+      <Position>4</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="24" name="R_SPECIALTY">
+      <Position>5</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="24" name="R_EDUCATION">
+      <Position>6</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="40" parent="24" name="R_HOBBY">
+      <Position>7</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="24" name="R_ENGLEVEL">
+      <Position>8</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="42" parent="24" name="R_COMPLEVEL">
+      <Position>9</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="43" parent="24" name="R_BORNDATE">
+      <Position>10</Position>
+      <DataType>DATE|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="24" name="R_WORKEXPERIENCE">
+      <Position>11</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="45" parent="24" name="R_ADDRESS">
+      <Position>12</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="24" name="R_EMAIL">
+      <Position>13</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="24" name="R_NAVITEPLACE">
+      <Position>14</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="24" name="R_PHONE">
+      <Position>15</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="24" name="R_READ">
+      <Position>16</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0 </DefaultExpression>
+    </column>
+    <index id="50" parent="24" name="SYS_C007071">
+      <ObjectId>20344</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-10-20.18:21:56</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-20.18:21:56</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>R_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="51" parent="24" name="SYS_C007071">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-10-20.18:21:56</ModifiedTimestamp>
+      <ColNames>R_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007071</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="52" parent="25" name="V_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="25" name="V_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="25" name="V_PASS">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="55" parent="25" name="SYS_C007052">
       <ObjectId>20257</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-10-20.01:30:42</CreatedTimestamp>
@@ -102,7 +256,7 @@
       <ColNames>V_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="27" parent="22" name="SYS_C007052">
+    <key id="56" parent="25" name="SYS_C007052">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2018-10-20.01:30:42</ModifiedTimestamp>
       <ColNames>V_ID</ColNames>

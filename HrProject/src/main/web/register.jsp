@@ -9,51 +9,47 @@
     <base href="<%=basePath%>"/>
     <title>注册</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script type="text/javascript" src="js/jquery-1.11.1.js"/>
-    <script type="text/javascript" src="js/jquery-validate.js"/>
-    <script type="text/javascript">
-        $(document).ready(function(){
+    <script type="text/javascript" src="js/jquery-3.2.1.js"/>
+    <script type="text/javascript" src="js/jquery.validate.min.js"/>
+    <script type="text/javascript" src="js/messages_zh.js"/>
+    <script >
+        $().ready(function() {
+// 在键盘按下并释放及提交后验证提交表单
             $("#regiserform").validate({
                 rules: {
-                    username:{
+                   v_name: {
                         required: true,
                         minlength: 2
                     },
-                    password:{
+                    v_pass: {
                         required: true,
-                        minlength: 6,
-                        maxlength: 16
+                        minlength: 5
                     },
-                    repassword:{
+                    confirm_password: {
                         required: true,
+                        minlength: 5,
                         equalTo: "#password"
-                    },
-                    amt: {
-                        required: true,
-                        amtCheck: true
                     }
                 },
-                messages:{
-                    username:{
-                        required: "用户名不能为空",
-                        minlength: "用户名的最小长度为2"
+                messages: {
+                    v_name: {
+                        required: "请输入用户名",
+                        minlength: "用户名必需由两个字母组成"
                     },
-                    password:{
-                        required: "密码不能为空",
-                        minlength: "密码长度不能少于6个字符",
-                        maxlength: "密码长度不能超过16个字符"
+                    v_pass: {
+                        required: "请输入密码",
+                        minlength: "密码长度不能小于 5 个字母"
                     },
-                    repassword:{
-                        required: "确认密码不能为空",
-                        equalTo: "确认密码和密码不一致"
-                    },
-                    amt: {
-                        required: "金额不能为空"
+                    repetpass: {
+                        required: "请输入密码",
+                        minlength: "密码长度不能小于 5 个字母",
+                        equalTo: "两次密码输入不一致"
                     }
                 }
             });
         });
-        $(function () {
+
+/*        $(function () {
             $("#name").blur(function () {
                 $.ajax({
                     type:"post",
@@ -70,7 +66,7 @@
                     }
                 })
             })
-        })
+        })*/
 
     </script>
 </head>
@@ -83,16 +79,16 @@
     </div>
     <form  action="register" method="post" id="regiserform" onSubmit="return isValid(this);">
         <div class="input-box">
-            <label for="username" class="input-label">用户账号:</label>
-            <input type="text" name="v_name"  id="username"placeholder="Please enter your acount"
+            <label for="username" >用户账号:</label>
+            <input type="text" name="username"  id="username"placeholder="Please enter your acount"
             autocomplete="off" tip="请输入用户名">
         </div>
         <div class="input-box">
-            <label for="password" class="input-label">输入密码:</label>
-            <input type="password" name="v_pass" id="password" placeholder="Please enter your password" tip="长度为6-16个字符">
+            <label for="password">输入密码:</label>
+            <input type="password" name="password" id="password" placeholder="Please enter your password" tip="长度为6-16个字符">
         </div>
         <div class="input-box">
-            <label for="password" class="input-label">再次输入:</label>
+            <label for="password">再次输入:</label>
             <input type="password" name="repetpass"  placeholder="Please enter your password again" tip="密码必须一致">
         </div>
     </form>

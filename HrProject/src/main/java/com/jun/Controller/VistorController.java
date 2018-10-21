@@ -22,7 +22,7 @@ public class VistorController {
             if (null != vistor1) {
                 arr.addAttribute("currentPage", 1);
                 session.setAttribute("vst", vistor1);
-                return "showresume";
+                return "redirect:/showRecruit";
             }
 
             return "../../index";
