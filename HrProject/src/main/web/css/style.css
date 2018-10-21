@@ -17,7 +17,7 @@ body{
 }
 #content2{
     background-color: rgba(255, 255, 255, 0.95);
-    width: 500px;
+    width:650px;
     height: 350px;
     border: 1px solid #000000;
     border-radius: 6px;
@@ -150,4 +150,7 @@ body{
 
 .logon-box a:active {
     color: #ee7204;
+}
+.error{
+    color: red;
 }

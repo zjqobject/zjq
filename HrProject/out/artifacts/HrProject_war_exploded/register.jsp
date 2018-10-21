@@ -8,10 +8,10 @@
 <head>
     <base href="<%=basePath%>"/>
     <title>注册</title>
-    <script type="text/javascript" src="js/jquery-3.2.1.js"/>
-    <script type="text/javascript" src="js/jquery.validate.min.js"/>
-    <script type="text/javascript" src="js/messages_zh.js"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/messages_zh.js"></script>>
     <script >
         $().ready(function() {
 // 在键盘按下并释放及提交后验证提交表单
@@ -19,21 +19,31 @@
                 rules: {
                    v_name: {
                         required: true,
+                        remote: {
+                            url: "volidataname",
+                            cache:false,
+                            data: {
+                                v_name:function () {
+                                    return $("#v_name").val();
+                                }
+                            }
+                        },
                         minlength: 2
                     },
                     v_pass: {
                         required: true,
                         minlength: 5
                     },
-                    confirm_password: {
+                    repetpass: {
                         required: true,
                         minlength: 5,
-                        equalTo: "#password"
+                        equalTo: "#v_pass"
                     }
                 },
                 messages: {
                     v_name: {
                         required: "请输入用户名",
+                        remote:"用户名已存在",
                         minlength: "用户名必需由两个字母组成"
                     },
                     v_pass: {
@@ -49,24 +59,6 @@
             });
         });
 
-/*        $(function () {
-            $("#name").blur(function () {
-                $.ajax({
-                    type:"post",
-                    url:"volidataname",
-                    data:{v_name:$("#name").val()},
-                success:function (result) {
-                        if(result=="false"){
-                            $("#error_message").html("该用户已存在");
-                            $("#name").val("");
-                        }
-                        else {
-                            $("#error_message").html("用户名可用");
-                        }
-                    }
-                })
-            })
-        })*/
 
     </script>
 </head>
@@ -79,17 +71,17 @@
     </div>
     <form  action="register" method="post" id="regiserform" onSubmit="return isValid(this);">
         <div class="input-box">
-            <label for="username" >用户账号:</label>
-            <input type="text" name="username"  id="username"placeholder="Please enter your acount"
+            <label for="v_name" >用户账号:</label>
+            <input type="text" name="v_name"  id="v_name"placeholder="Please enter your acount"
             autocomplete="off" tip="请输入用户名">
         </div>
         <div class="input-box">
-            <label for="password">输入密码:</label>
-            <input type="password" name="password" id="password" placeholder="Please enter your password" tip="长度为6-16个字符">
+            <label for="v_pass">输入密码:</label>
+            <input type="password" name="v_pass" id="v_pass" placeholder="Please enter your password" tip="长度为6-16个字符">
         </div>
         <div class="input-box">
-            <label for="password">再次输入:</label>
-            <input type="password" name="repetpass"  placeholder="Please enter your password again" tip="密码必须一致">
+            <label for="repetpass">再次输入:</label>
+            <input type="password" name="repetpass" id="repetpass"  placeholder="Please enter your password again" tip="密码必须一致">
         </div>
     </form>
     <div class="button-box2">

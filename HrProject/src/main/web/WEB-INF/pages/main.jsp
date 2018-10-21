@@ -18,16 +18,16 @@
     <base href="<%=basePath%>"/>
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/css/pintuer.css">
-    <script type="text/javascript" src="/js/respond.js"></script>
-    <script type="text/javascript" src="/js/pintuer.js"></script>
-    <script type="text/javascript" src="/js/jquery-1.11.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="/pintuer2/css/pintuer.css">
+    <script type="text/javascript" src="/pintuer2/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="/pintuer2/js/pintuer.js"></script>
+    <script type="text/javascript" src="/pintuer2/js/respond.js"></script>
 </head>
 <body >
 <div class="head">
 <div class="container">
     <div class="x12">
-        <ul>
+        <ul class="nav nav-meau nav-inline nav-pills nav-navicon" >
             <li class="nav-head"><a href="#" style="text-decoration: none ">
                 <img src="/images/logo1.png">
             </a></li>
