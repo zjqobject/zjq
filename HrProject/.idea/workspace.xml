@@ -6,23 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1407f90-1e89-40ef-924c-8500196d1a36" name="Default Changelist" comment="validate">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jun/Controller/ResumeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jun/dao/ResumeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jun/mapper/ResumeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jun/model/Resume.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/ResumeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/ResumeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/web/addResume.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/741b86f5-64f5-4fb4-a3a7-7b79a88aab50.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/741b86f5-64f5-4fb4-a3a7-7b79a88aab50.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/741b86f5-64f5-4fb4-a3a7-7b79a88aab50/storage_v2/_src_/schema/SCOTT.v0axBA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/741b86f5-64f5-4fb4-a3a7-7b79a88aab50/storage_v2/_src_/schema/SCOTT.v0axBA.meta" afterDir="false" />
+    <list default="true" id="d1407f90-1e89-40ef-924c-8500196d1a36" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/model/Recruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/model/Recruit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/register.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -504,7 +489,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540273997465" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540276749281" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="E:/jdbc/javamall" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -637,7 +622,7 @@
       <workItem from="1540127951289" duration="1356000" />
       <workItem from="1540129380499" duration="16781000" />
       <workItem from="1540190332739" duration="29351000" />
-      <workItem from="1540257854009" duration="14164000" />
+      <workItem from="1540257854009" duration="14564000" />
     </task>
     <task id="LOCAL-00001" summary="登录注册界面css写完">
       <created>1539998696401</created>
@@ -667,11 +652,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540146879098</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="validate">
+      <created>1540276208506</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1540276208506</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146245000" />
+    <option name="totallyTimeSpent" value="146645000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
