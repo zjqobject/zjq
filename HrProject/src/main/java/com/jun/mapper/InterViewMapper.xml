@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jun.dao.InterViewDao">
+    <insert id="addInterView">
+        insert  into T_INTERVIEW values (INTERVIEW_SEQ.nextval,#{iv_invit},#{iv_vname},#{iv_rename})
+    </insert>
+
+    <select id="getInterViewByiv_vname" resultType="com.jun.model.Interview">
+               select  * from T_INTERVIEW where iv_vname=#{iv_vname}
+    </select>
+    <select id="getInterView" resultType="com.jun.model.Interview">
+        select  * from T_INTERVIEW where iv_vname=#{iv_vname} and iv_rename=#{iv_rename}
+    </select>
+</mapper>

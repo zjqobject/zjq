@@ -1,6 +1,7 @@
 <%@ page import="com.jun.model.Recruit" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.jun.model.Resume" %><%--
+<%@ page import="com.jun.model.Resume" %>
+<%@ page import="com.jun.model.Interview" %><%--
   Created by IntelliJ IDEA.
   User: lenovo
   Date: 2018/10/20
@@ -41,13 +42,15 @@
 <div class="container">
     <div class="x12">
         <ul class="nav nav-meau nav-inline nav-pills nav-navicon" >
-            <li class="nav-head"><a href="#" style="text-decoration: none ">
-                <img src="/images/logo1.png">
-            </a></li>
+            <li class="nav-head">
+                <a href="#" style="text-decoration: none ">
+                    <img src="/images/logo1.png">
+                </a>
+            </li>
             <li class="onelevelmenu"><a style="text-decoration: none ">关于公司</a></li>
             <li class="onelevelmenu"><a style="text-decoration: none ">产品与应用</a></li>
-            <li class="onelevelmenu"><a style="text-decoration: none ">服务支持</a></li>
-            <li class="onelevelmenu"><a href="showRecruit?currentpage=1" style="text-decoration: none ">加入我们</a></li>
+            <li class="onelevelmenu"><a href="showInterview" style="text-decoration: none ">投递信息</a></li>
+            <li class="onelevelmenu"><a href="showRecruit?currentPage=1" style="text-decoration: none ">加入我们</a></li>
 
         </ul>
     </div>
@@ -56,6 +59,7 @@
 <div style="width: 1200px; background:#fff;margin: auto;position: relative;z-index: 1">
     <%
         List<Recruit> recruitList = (List<Recruit>)request.getAttribute("recruitList");
+        List<Interview> interviewList=(List<Interview>) request.getAttribute("interviewList");
         if (recruitList!=null){
     %>
     <h3 align="center">招聘信息</h3>
@@ -106,8 +110,11 @@
             <td>
                 <form action="showResume" method="post">
                     <input type="hidden" name="re_id" value="<%=recruitList.get(i).getRe_id()%>">
-                    <input type="submit"value="简历投递">
+                    <input type="submit"value="查看简历">
                 </form>
+            </td>
+            <td>
+                ${nullmessage}
             </td>
         </tr>
         <%
@@ -215,17 +222,20 @@
     </table>
     </form>
             <div style="width: 100px ;height: 30px" align="center">
-                <form action="postresume" method="post">
+                <form action="addInterview" method="post">
                     <input type="hidden" name="r_id" value="<%=resume.getR_id()%>">
                     <input type="submit"value="简历投递">
                 </form>
             </div>
   <%
+
+
+
         }
         else{
             if(recruitList==null){
   %>
-    <p align="center"><a href="addResume.jsp">添加简历</a></p>
+    <h align="center"><a href="addResume.jsp">添加简历</a></h>
     <%
         }
         }

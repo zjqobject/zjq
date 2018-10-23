@@ -12,4 +12,7 @@
     <select id="getRecruitAll" resultType="com.jun.model.Recruit">
         select *from  T_RECRUIT
     </select>
+    <select id="getRecruitByre_id" resultType="com.jun.model.Recruit">
+        select *from  T_RECRUIT where re_id=#{re_id}
+    </select>
 </mapper>

@@ -1,6 +1,7 @@
 package com.jun.Controller;
 
 import com.jun.model.Recruit;
+import com.jun.service.InterViewService;
 import com.jun.service.RecruitService;
 import com.jun.util.DoPage;
 import org.springframework.beans.factory.annotation.Autowired;

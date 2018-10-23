@@ -22,4 +22,8 @@ public class RecruitServiceImpl  implements RecruitService{
     public List<Recruit> getRecruitAll() {
         return recruitDao.getRecruitAll();
     }
+
+    public Recruit getRecruitByre_id(Recruit recruit) {
+        return recruitDao.getRecruitByre_id(recruit);
+    }
 }
