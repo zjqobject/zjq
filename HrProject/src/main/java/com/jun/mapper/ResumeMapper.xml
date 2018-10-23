@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jun.dao.ResumeDao">
+    <insert id="addResme" parameterType="com.jun.model.Resume">
+        insert  into  T_RESUME values (
+           RESUME_SEQ.nextval,#{r_name},#{r_sex},#{r_college},#{r_specialty},#{r_education},#{r_evaluate},#{r_englevel},#{r_complevel},#{r_workexperience},#{r_address},#{r_email},#{r_naviteplace},#{r_phone},#{r_read},#{r_vid},#{r_nation},#{r_edusystem},#{r_height},#{r_postcode},#{r_educatexp},#{r_politics},#{r_borndate}
+           )
+
+    </insert>
+    <select id="getResume" resultType="com.jun.model.Resume">
+        select  * from T_RESUME where R_VID=#{r_vid}
+    </select>
+</mapper>

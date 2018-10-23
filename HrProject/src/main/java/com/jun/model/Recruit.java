@@ -9,6 +9,15 @@ public class Recruit {
     private String re_education;
     private int re_years;
     private String  re_welfare;
+    private String re_address;
+
+    public String getRe_address() {
+        return re_address;
+    }
+
+    public void setRe_address(String re_address) {
+        this.re_address = re_address;
+    }
 
     public int getRe_salarylow() {
         return re_salarylow;

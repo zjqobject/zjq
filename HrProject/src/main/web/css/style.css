@@ -154,3 +154,6 @@ body{
 .error{
     color: red;
 }
+.checked{
+    color: green;
+}
