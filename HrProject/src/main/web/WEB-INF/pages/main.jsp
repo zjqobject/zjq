@@ -22,7 +22,7 @@
     <style type="text/css">
         td{
             text-align:center;
-            width:100px;
+            width:80px;
             height:30px;
         }
         input{
@@ -48,7 +48,8 @@
                 </a>
             </li>
             <li class="onelevelmenu"><a style="text-decoration: none ">关于公司</a></li>
-            <li class="onelevelmenu"><a style="text-decoration: none ">产品与应用</a></li>
+            <li class="onelevelmenu"><a href="showResumeAll"  style="text-decoration: none ">我的简历</a></li>
+            <li class="onelevelmenu"><a href="../../addResume.jsp"  style="text-decoration: none ">填写简历</a></li>
             <li class="onelevelmenu"><a href="showInterview" style="text-decoration: none ">投递信息</a></li>
             <li class="onelevelmenu"><a href="showRecruit?currentPage=1" style="text-decoration: none ">加入我们</a></li>
 
@@ -56,14 +57,14 @@
     </div>
 </div>
 </div>
-<div style="width: 1200px; background:#fff;margin: auto;position: relative;z-index: 1">
+<div style="width: 1200px; height: 800px; background:#fff;margin: auto;position: relative;z-index: 1">
+   <div style="width:800px; height:100% ; background-color: #ccffaa;margin: 0 auto" >
     <%
         List<Recruit> recruitList = (List<Recruit>)request.getAttribute("recruitList");
-        List<Interview> interviewList=(List<Interview>) request.getAttribute("interviewList");
         if (recruitList!=null){
     %>
     <h3 align="center">招聘信息</h3>
-    <table border="1" cellspacing="0" width="100%">
+    <table border="1" align="center" >
 
         <tr>
             <td>职位名称</td>
@@ -108,13 +109,10 @@
             <td><%=recruitList.get(i).getRe_welfare()%></td>
             <td><%=recruitList.get(i).getRe_years()%>年</td>
             <td>
-                <form action="showResume" method="post">
+                <form action="showResumeAll" method="post">
                     <input type="hidden" name="re_id" value="<%=recruitList.get(i).getRe_id()%>">
-                    <input type="submit"value="查看简历">
+                    <input type="submit"value="投递简历">
                 </form>
-            </td>
-            <td>
-                ${nullmessage}
             </td>
         </tr>
         <%
@@ -136,11 +134,44 @@
                 }
             }
         }
-       Resume resume  = (Resume) request.getAttribute("resume");
-        if (resume!=null){
+        /* 简历总览*/
+      List<Resume> resumeList  = (List<Resume>) request.getAttribute("resumeList");
+        if (resumeList!=null){
     %>
-    <form method="post" action="updateResume">
-    <table border="1" align="center">
+       <table border="1" align="center" >
+
+           <tr>
+               <td>序号</td>
+               <td>简历名称</td>
+               <td>详情查看</td>
+               <td>选择</td>
+
+
+           </tr>
+           <%
+               for (int i = 0; i < resumeList.size(); i++) {
+           %>
+           <tr>
+               <td><%=resumeList.get(i).getR_id()%></td>
+               <td>简历<%=i%></td>
+               <td>
+                  <a href="showResumeDetail?r_id=<%=resumeList.get(i).getR_id()%>">查看</a>
+               </td>
+               <td>
+                   <a href="addInterview?iv_rid=<%=resumeList.get(i).getR_id()%>">选择</a>
+               </td>
+
+       </table>
+       <%
+           }
+           }
+           Resume resume  = (Resume) request.getAttribute("resume");
+           if (resume!=null){
+        %>
+    <%--个人简历界面--%>
+    <form method="post" action="updateResume" id="updateResumeForm">
+        <h3 align="center">个人简历</h3>
+        <table border="1" align="center">
         <!--第一行-->
         <tr>
             <td>姓名</td>
@@ -220,28 +251,17 @@
         </tr>
 
     </table>
-    </form>
-            <div style="width: 100px ;height: 30px" align="center">
-                <form action="addInterview" method="post">
-                    <input type="hidden" name="r_id" value="<%=resume.getR_id()%>">
-                    <input type="submit"value="简历投递">
-                </form>
-            </div>
-  <%
-
-
-
-        }
-        else{
-            if(recruitList==null){
-  %>
-    <h align="center"><a href="addResume.jsp">添加简历</a></h>
-    <%
-        }
-        }
-    %>
+    <div  align="center">
+        <ul class="nav nav-meau nav-inline nav-pills nav-navicon" >
+            <li class="onelevelmenu"><a herf="deleteResumes" style="text-decoration: none ">删除简历</a></li>
+            <li class="onelevelmenu"><a type="submit" value="updateResume"  form="updateResumeForm" style="text-decoration: none ">更新简历</a></li>
+        </ul>
+    </div>
+        <%
+            }
+%>
+ </div>
 </div>
-
 </body>
 </html>
 

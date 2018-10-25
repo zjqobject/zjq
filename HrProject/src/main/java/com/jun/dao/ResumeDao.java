@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface ResumeDao {
     int addResme(Resume resume);
-    Resume getResume(Resume resume);
+   List <Resume> getResumeByvid(Resume resume);
+    Resume  getResumeByid(Resume resume);
 }

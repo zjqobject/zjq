@@ -1,10 +1,9 @@
 package com.jun.Controller;
 
-import com.jun.model.Interview;
+
 import com.jun.model.Recruit;
 import com.jun.model.Resume;
 import com.jun.model.Vistor;
-import com.jun.service.InterViewService;
 import com.jun.service.RecruitService;
 import com.jun.service.ResumeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Controller
 public class ResumeController {
@@ -21,8 +21,6 @@ public class ResumeController {
     private ResumeService resumeService;
     @Autowired
     private RecruitService recruitService;
-    @Autowired
-    private InterViewService interViewService;
     @RequestMapping("/addResumes")
     public String addResumes(Resume resume, Model model,HttpSession session)throws Exception{
         Vistor vistor= (Vistor) session.getAttribute("vst") ;
@@ -30,14 +28,14 @@ public class ResumeController {
         resume.setR_read(0);
         int a=resumeService.addResme(resume);
         if (a==0){
-            model.addAttribute("message","注册失败");
+            model.addAttribute("message","添加失败");
         }
         else{
-            model.addAttribute("message","注册成功");
+            model.addAttribute("message","添加成功");
         }
-        return "redirect:/showResume";
+        return "redirect:/showResumeAll";
     }
-    @RequestMapping("/showResume")
+    @RequestMapping("/showResumeAll")
     public String showResume(Model model, HttpSession session, HttpServletRequest request)throws Exception{
 
         Vistor vistor= (Vistor) session.getAttribute("vst");
@@ -48,7 +46,16 @@ public class ResumeController {
         recruit.setRe_id(re_id);
         Recruit recruit1=recruitService.getRecruitByre_id(recruit);
         session.setAttribute("recruit",recruit1);
-        Resume resume=resumeService.getResume(resume1);
+        List<Resume> resumeList=resumeService.getResumeByvid(resume1);
+        model.addAttribute("resumeList",resumeList);
+        return "main";
+    }
+    @RequestMapping("/showResumeDetail")
+    public String showResume(Model model, int r_id , HttpServletRequest request)throws Exception{
+
+        Resume resume1= new Resume();
+        resume1.setR_id(r_id);
+        Resume resume=resumeService.getResumeByid(resume1);
         model.addAttribute("resume",resume);
         return "main";
     }

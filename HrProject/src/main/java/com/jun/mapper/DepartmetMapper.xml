@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jun.dao.DepartmentDao">
+    <insert id="addDepartment">
+        insert  into  T_DEPARTMENT values (DEPARTMENT_SEQ.nextval,#{de_name})
+    </insert>
+    <select id="getDepartmentAll" resultType="com.jun.model.Department">
+          select * from T_DEPARTMENT
+    </select>
+    <select id="getDepartment" resultType="com.jun.model.Department">
+        select * from T_DEPARTMENT where DE_NAME=#{de_name}
+    </select>
+</mapper>

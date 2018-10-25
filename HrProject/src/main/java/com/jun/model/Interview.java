@@ -5,6 +5,24 @@ public class Interview {
     private int iv_invit;
     private String iv_vname;
     private String  iv_rename;
+    private int iv_receive;
+    private int iv_rid;
+
+    public int getIv_rid() {
+        return iv_rid;
+    }
+
+    public void setIv_rid(int iv_rid) {
+        this.iv_rid = iv_rid;
+    }
+
+    public int getIv_receive() {
+        return iv_receive;
+    }
+
+    public void setIv_receive(int iv_receive) {
+        this.iv_receive = iv_receive;
+    }
 
     public Interview() {
     }

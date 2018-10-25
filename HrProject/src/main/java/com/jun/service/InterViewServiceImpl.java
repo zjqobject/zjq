@@ -24,5 +24,17 @@ public class InterViewServiceImpl implements InterViewService{
         return interViewDao.getInterViewByiv_vname(interview);
     }
 
+    public int updateInterViewReceive(Interview interview) {
+        return interViewDao.updateInterViewReceive(interview);
+    }
+
+    public int updateInterViewinvit(Interview interview) {
+        return interViewDao.updateInterViewinvit(interview);
+    }
+
+    public List<Interview> getInterViewALL() {
+        return interViewDao.getInterViewALL();
+    }
+
 
 }

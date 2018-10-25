@@ -15,6 +15,11 @@
 <head>
     <base href="<%=basePath%>"/>
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/pintuer2/css/pintuer.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <script type="text/javascript" src="/pintuer2/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="/pintuer2/js/pintuer.js"></script>
+    <script type="text/javascript" src="/pintuer2/js/respond.js"></script>
 </head>
 <body>
 <%
@@ -30,7 +35,7 @@ if(interviewList!=null)
         <td>职位名称</td>
         <td>求职人</td>
         <td>offer</td>
-
+        <td>接受面试邀请</td>
 
     </tr>
         <%
@@ -43,16 +48,28 @@ if(interviewList!=null)
             if(interviewList.get(i).getIv_invit()==0){
         %>
         <td>未收到offer</td>
+        <td></td>
         <%
         }
         else{
         %>
-        <td>已收到offer</td>
-<%
+        <td>收到offer</td>
+       <%
+       if(interviewList.get(i).getIv_receive()==0) {
+            %>
+
+        <td><a href="updateInterViewReceive?iv_id=<%=interviewList.get(i).getIv_id()%>">接受面试邀请</a> </td>
+        <%
+        }
+        else{
+        %>
+        <td>已接受</td>
+        <%
+        }
         }
        }
     }
-%>
+    %>
 </body>
 </html>
 

@@ -21,12 +21,14 @@ public class InterViewController {
     @Autowired
     private InterViewService interViewService;
     @RequestMapping("/addInterview")
-    public String addInterview(Model model, RedirectAttributes arr, HttpSession session)throws Exception{
+    public String addInterview(Model model, RedirectAttributes arr,int iv_rid, HttpSession session)throws Exception{
         Interview interview= new Interview();
         Vistor vistor=(Vistor)session.getAttribute("vst");
         interview.setIv_vname(vistor.getV_name());
-      Recruit recruit =(Recruit) session.getAttribute("recruit");
+        Recruit recruit =(Recruit) session.getAttribute("recruit");
         interview.setIv_rename(recruit.getRe_position());
+        interview.setIv_rid(iv_rid);
+        interview.setIv_receive(0);
         Interview interview1=interViewService.getInterView(interview);
         if(interview1==null) {
             int a = interViewService.addInterView(interview);
@@ -45,6 +47,28 @@ public class InterViewController {
         List<Interview> interviewList=interViewService.getInterViewByiv_vname(interview);
         model.addAttribute("interviewList",interviewList);
         return "interview";
+    }
+    @RequestMapping("/updateInterViewReceive")
+    public String updateInterViewReceive(int iv_id)throws Exception{
+        Interview interview= new Interview();
+        interview.setIv_id(iv_id);
+        interview.setIv_receive(1);
+       interViewService.updateInterViewReceive(interview);
+        return "redirect:/showInterview";
+    }
+    @RequestMapping("/updateInterViewinvit")
+    public String updateInterViewinvit(int iv_id)throws Exception{
+        Interview interview= new Interview();
+        interview.setIv_id(iv_id);
+        interview.setIv_invit(1);
+        interViewService.updateInterViewinvit(interview);
+        return "redirect:/showInterviewAll";
+    }
+    @RequestMapping("/showInterviewAll")
+    public String showInterviewALL(Model model)throws Exception{
+        List<Interview> interviewList=interViewService.getInterViewALL();
+        model.addAttribute("interviewList",interviewList);
+        return "manager";
     }
 
 }

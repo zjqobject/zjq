@@ -7,7 +7,11 @@
            )
 
     </insert>
-    <select id="getResume" resultType="com.jun.model.Resume">
+    <select id="getResumeByvid" resultType="com.jun.model.Resume">
         select  * from T_RESUME where R_VID=#{r_vid}
     </select>
+    <select id="getResumeByid" resultType="com.jun.model.Resume">
+         select  * from T_RESUME where R_ID=#{r_id}
+    </select>
+
 </mapper>

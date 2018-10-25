@@ -2,7 +2,10 @@ package com.jun.service;
 
 import com.jun.model.Resume;
 
+import java.util.List;
+
 public interface ResumeService {
     int addResme(Resume resume);
-    Resume getResume(Resume resume);
+    List<Resume> getResumeByvid(Resume resume);
+    Resume  getResumeByid(Resume resume);
 }

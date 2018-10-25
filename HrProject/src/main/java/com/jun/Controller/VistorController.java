@@ -21,9 +21,14 @@ public class VistorController {
     public String login(Vistor vistor, RedirectAttributes arr, HttpSession session)throws Exception{
             Vistor vistor1 = vistorService.getVistor(vistor);
             if (null != vistor1) {
-                arr.addAttribute("currentPage", 1);
-                session.setAttribute("vst", vistor1);
-                return "redirect:/showRecruit";
+                if(vistor1.getV_name().equals("root")){
+                    return "redirect:/showInterviewAll";
+                }
+                else {
+                    arr.addAttribute("currentPage", 1);
+                    session.setAttribute("vst", vistor1);
+                    return "redirect:/showRecruit";
+                }
             }
 
             return "../../index";
