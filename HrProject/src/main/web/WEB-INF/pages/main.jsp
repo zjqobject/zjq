@@ -57,7 +57,7 @@
     </div>
 </div>
 </div>
-<div style="width: 1200px; height: 800px; background:#fff;margin: auto;position: relative;z-index: 1">
+<div style="width: 960px; height: 800px; background:#fff;margin: auto;position: relative;z-index: 1">
    <div style="width:800px; height:100% ; background-color: #ccffaa;margin: 0 auto" >
     <%
         List<Recruit> recruitList = (List<Recruit>)request.getAttribute("recruitList");
@@ -134,7 +134,7 @@
                 }
             }
         }
-        /* 简历总览*/
+        /* 挑选简历*/
       List<Resume> resumeList  = (List<Resume>) request.getAttribute("resumeList");
         if (resumeList!=null){
     %>
@@ -164,6 +164,29 @@
        </table>
        <%
            }
+           }
+           List<Resume> resumeList1  = (List<Resume>) request.getAttribute("resumeList1");
+           if (resumeList1!=null){
+       %>
+       <table border="1" align="center" >
+
+           <tr>
+               <td>序号</td>
+               <td>简历名称</td>
+               <td>详情查看</td>
+           </tr>
+           <%
+               for (int i = 0; i < resumeList1.size(); i++) {
+           %>
+           <tr>
+               <td><%=resumeList1.get(i).getR_id()%></td>
+               <td>简历<%=i%></td>
+               <td>
+                   <a href="showResumeDetail?r_id=<%=resumeList1.get(i).getR_id()%>">查看</a>
+               </td>
+       </table>
+       <%
+               }
            }
            Resume resume  = (Resume) request.getAttribute("resume");
            if (resume!=null){
@@ -260,6 +283,55 @@
         <%
             }
 %>
+        <%--投递信息--%>
+            <%
+            List<Interview> interviewList=(List<Interview>) request.getAttribute("interviewList");
+if(interviewList!=null)
+{
+%>
+        <h3 align="center">投递信息</h3>
+        <span><a >返回公司首页</a></span>
+        <table border="1" cellspacing="0" width="100%">
+
+            <tr>
+                <td>职位名称</td>
+                <td>求职人</td>
+                <td>offer</td>
+                <td>接受面试邀请</td>
+
+            </tr>
+                <%
+            for (int i = 0; i < interviewList.size(); i++) {
+        %>
+            <tr>
+                <td><%=interviewList.get(i).getIv_rename()%></td>
+                <td><%=interviewList.get(i).getIv_vname()%></td>
+                    <%
+            if(interviewList.get(i).getIv_invit()==0){
+        %>
+                <td>未收到offer</td>
+                <td></td>
+                    <%
+        }
+        else{
+        %>
+                <td>收到offer</td>
+                    <%
+       if(interviewList.get(i).getIv_receive()==0) {
+            %>
+
+                <td><a href="updateInterViewReceive?iv_id=<%=interviewList.get(i).getIv_id()%>">接受面试邀请</a> </td>
+                    <%
+        }
+        else{
+        %>
+                <td>已接受</td>
+                    <%
+        }
+        }
+       }
+    }
+    %>
  </div>
 </div>
 </body>

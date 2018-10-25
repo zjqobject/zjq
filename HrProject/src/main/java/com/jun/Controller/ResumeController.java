@@ -37,18 +37,26 @@ public class ResumeController {
     }
     @RequestMapping("/showResumeAll")
     public String showResume(Model model, HttpSession session, HttpServletRequest request)throws Exception{
-
         Vistor vistor= (Vistor) session.getAttribute("vst");
-        int re_id=Integer.parseInt( request.getParameter("re_id"));
+
+            if(request.getParameter("re_id")!=null) {
+                Recruit recruit = new Recruit();
+                int re_id = Integer.parseInt(request.getParameter("re_id"));
+                recruit.setRe_id(re_id);
+                Recruit recruit1 = recruitService.getRecruitByre_id(recruit);
+                session.setAttribute("recruit", recruit1);
+                Resume resume1= new Resume();
+                resume1.setR_vid(vistor.getV_id());
+                List<Resume> resumeList=resumeService.getResumeByvid(resume1);
+                model.addAttribute("resumeList",resumeList);
+                return "main";
+            }
+            else{
         Resume resume1= new Resume();
         resume1.setR_vid(vistor.getV_id());
-        Recruit recruit= new Recruit();
-        recruit.setRe_id(re_id);
-        Recruit recruit1=recruitService.getRecruitByre_id(recruit);
-        session.setAttribute("recruit",recruit1);
         List<Resume> resumeList=resumeService.getResumeByvid(resume1);
-        model.addAttribute("resumeList",resumeList);
-        return "main";
+        model.addAttribute("resumeList1",resumeList);
+        return "main";}
     }
     @RequestMapping("/showResumeDetail")
     public String showResume(Model model, int r_id , HttpServletRequest request)throws Exception{

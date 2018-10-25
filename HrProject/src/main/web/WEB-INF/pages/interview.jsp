@@ -22,6 +22,7 @@
     <script type="text/javascript" src="/pintuer2/js/respond.js"></script>
 </head>
 <body>
+<div style="width: 800px;height: 100%; margin:0 auto ; background-color: #ccffaa" >
 <%
             List<Interview> interviewList=(List<Interview>) request.getAttribute("interviewList");
 if(interviewList!=null)
@@ -70,6 +71,7 @@ if(interviewList!=null)
        }
     }
     %>
+</div>
 </body>
 </html>
 
