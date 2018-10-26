@@ -1,3 +1,6 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
 <%@ page import="com.jun.model.Recruit" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.jun.model.Resume" %>
@@ -52,7 +55,6 @@
             <li class="onelevelmenu"><a href="../../addResume.jsp"  style="text-decoration: none ">填写简历</a></li>
             <li class="onelevelmenu"><a href="showInterview" style="text-decoration: none ">投递信息</a></li>
             <li class="onelevelmenu"><a href="showRecruit?currentPage=1" style="text-decoration: none ">加入我们</a></li>
-
         </ul>
     </div>
 </div>
@@ -134,6 +136,8 @@
                 }
             }
         }
+        %>
+       <%
         /* 挑选简历*/
       List<Resume> resumeList  = (List<Resume>) request.getAttribute("resumeList");
         if (resumeList!=null){
@@ -185,6 +189,7 @@
                    <a href="showResumeDetail?r_id=<%=resumeList1.get(i).getR_id()%>">查看</a>
                </td>
        </table>
+       ${sessionScope.ReERR}
        <%
                }
            }
@@ -192,8 +197,9 @@
            if (resume!=null){
         %>
     <%--个人简历界面--%>
-    <form method="post" action="updateResume" id="updateResumeForm">
+    <form  method="post" action="updateResume" id="updateResumeForm">
         <h3 align="center">个人简历</h3>
+        <input type="hidden" name="r_id"  value="<%=resume.getR_name()%>">
         <table border="1" align="center">
         <!--第一行-->
         <tr>
@@ -274,10 +280,11 @@
         </tr>
 
     </table>
+    </form>
     <div  align="center">
         <ul class="nav nav-meau nav-inline nav-pills nav-navicon" >
-            <li class="onelevelmenu"><a herf="deleteResumes" style="text-decoration: none ">删除简历</a></li>
-            <li class="onelevelmenu"><a type="submit" value="updateResume"  form="updateResumeForm" style="text-decoration: none ">更新简历</a></li>
+            <li class="onelevelmenu"><a  href="deleteResumes?r_id=<%=resume.getR_id()%>" style="text-decoration: none ">删除简历</a></li>
+            <li class="onelevelmenu"><button type="submit" value="更新"  form="updateResumeForm" style="text-decoration: none ">更新简历</button></li>
         </ul>
     </div>
         <%
@@ -286,9 +293,8 @@
         <%--投递信息--%>
             <%
             List<Interview> interviewList=(List<Interview>) request.getAttribute("interviewList");
-if(interviewList!=null)
-{
-%>
+            if(interviewList!=null) {
+            %>
         <h3 align="center">投递信息</h3>
         <span><a >返回公司首页</a></span>
         <table border="1" cellspacing="0" width="100%">
@@ -296,42 +302,80 @@ if(interviewList!=null)
             <tr>
                 <td>职位名称</td>
                 <td>求职人</td>
-                <td>offer</td>
+                <td>收到面试邀请</td>
                 <td>接受面试邀请</td>
+                <td>是否录用</td>
 
             </tr>
-                <%
-            for (int i = 0; i < interviewList.size(); i++) {
-        %>
+                <% for (int i = 0; i < interviewList.size(); i++) {%>
             <tr>
                 <td><%=interviewList.get(i).getIv_rename()%></td>
                 <td><%=interviewList.get(i).getIv_vname()%></td>
-                    <%
-            if(interviewList.get(i).getIv_invit()==0){
-        %>
-                <td>未收到offer</td>
+                    <%   if(interviewList.get(i).getIv_invit()==0){%>
+                <td>未收到</td>
                 <td></td>
                     <%
-        }
-        else{
-        %>
-                <td>收到offer</td>
+                         }
+                         else{
+                     %>
+                <td>(已收到)<a href="getInvitmessage?iv_id=<%=interviewList.get(i).getIv_id()%>"> 查看邀请信息</a></td>
                     <%
-       if(interviewList.get(i).getIv_receive()==0) {
+
+                        if(interviewList.get(i).getIv_receive()==0) {
+                    %>
+                <td><a href="updateInterViewReceive?iv_id=<%=interviewList.get(i).getIv_id()%>">接受面试邀请</a> </td>
+                <td></td>
+                    <%
+                        } else{
+                    %>
+                    <td>已接受</td>
+                     <%
+                         }
+                    if(interviewList.get(i).getIv_offerid()==1){
+                     %>
+                    <td>(已收到)<a href="getOfferDetail?iv_id=<%=interviewList.get(i).getIv_id()%>">查看offer</a> </td>
+
+                    <%
+                    } else{
+
+                    %>
+                     <td>未收到offer</td>
+                <%
+                    }
+             }
+                %>
+             </tr>
+            <%
+        }
             %>
 
-                <td><a href="updateInterViewReceive?iv_id=<%=interviewList.get(i).getIv_id()%>">接受面试邀请</a> </td>
-                    <%
-        }
-        else{
-        %>
-                <td>已接受</td>
-                    <%
-        }
-        }
-       }
+        </table>
+        <%
     }
     %>
+            <%-- 面试邀请--%>
+       <%
+       Interview interviewMsg = (Interview)request.getAttribute("interviewMsg");
+        if (interviewMsg!=null){
+    %>
+                <h3> <%=interviewMsg.getIv_vname()%> 先生你好</h3>
+                <h3>您投递的 <%=interviewMsg.getIv_rename()%> 岗位请求已收到，请于 后天上午10点来我司面试</h3>
+                <h3>谢谢</h3>
+                <h3>日期：<fmt:formatDate value="<%=interviewMsg .getIv_date() %>" pattern="yyyy年MM月dd日" />    </h3>
+            <%
+                    }
+            %>
+                    <%
+       Interview offerview = (Interview)request.getAttribute("offerview");
+        if (offerview!=null){
+    %>
+                <h3> <%=offerview.getIv_vname()%> 先生（女士）你好</h3>
+                <h3>您投递的 <%=offerview.getIv_rename()%> 岗位请求已收到，请于 后天上午9点准时上班</h3>
+                <h3>谢谢</h3>
+                <h3>日期：<fmt:formatDate value="<%=offerview.getIv_offerDate()%>" pattern="yyyy年MM月dd日" />    </h3>
+                    <%
+                    }
+            %>
  </div>
 </div>
 </body>

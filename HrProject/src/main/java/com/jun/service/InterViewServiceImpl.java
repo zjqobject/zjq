@@ -36,5 +36,17 @@ public class InterViewServiceImpl implements InterViewService{
         return interViewDao.getInterViewALL();
     }
 
+    public Interview getInterViewByid(Interview interview) {
+        return  interViewDao.getInterViewByid(interview);
+    }
+
+    public int updateInterViewofferid(Interview interview) {
+        return interViewDao.updateInterViewofferid(interview);
+    }
+
+    public List<Interview> getInterViewByiv_rid(Interview interview) {
+        return interViewDao.getInterViewByiv_rid(interview);
+    }
+
 
 }

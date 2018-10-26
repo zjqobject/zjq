@@ -14,6 +14,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -29,6 +30,9 @@ public class InterViewController {
         interview.setIv_rename(recruit.getRe_position());
         interview.setIv_rid(iv_rid);
         interview.setIv_receive(0);
+        interview.setIv_offerid(0);
+        interview.setIv_date(new Date());
+        interview.setIv_offerDate(new Date());
         Interview interview1=interViewService.getInterView(interview);
         if(interview1==null) {
             int a = interViewService.addInterView(interview);
@@ -46,7 +50,7 @@ public class InterViewController {
         interview.setIv_vname(vistor.getV_name());
         List<Interview> interviewList=interViewService.getInterViewByiv_vname(interview);
         model.addAttribute("interviewList",interviewList);
-        return "interview";
+        return "main";
     }
     @RequestMapping("/updateInterViewReceive")
     public String updateInterViewReceive(int iv_id)throws Exception{
@@ -61,6 +65,8 @@ public class InterViewController {
         Interview interview= new Interview();
         interview.setIv_id(iv_id);
         interview.setIv_invit(1);
+        Date now = new Date();
+        interview.setIv_date(now);
         interViewService.updateInterViewinvit(interview);
         return "redirect:/showInterviewAll";
     }
@@ -69,6 +75,22 @@ public class InterViewController {
         List<Interview> interviewList=interViewService.getInterViewALL();
         model.addAttribute("interviewList",interviewList);
         return "manager";
+    }
+    @RequestMapping("/getInvitmessage")
+    public String getInvitmessage(Model model,int iv_id)throws Exception{
+        Interview interview= new Interview();
+        interview.setIv_id(iv_id);
+        Interview interview1=interViewService.getInterViewByid(interview);
+        model.addAttribute("interviewMsg",interview1);
+        return "main";
+    }
+    @RequestMapping("/getOfferDetail")
+    public String getOfferDetail(Model model,int iv_id)throws Exception{
+        Interview interview= new Interview();
+        interview.setIv_id(iv_id);
+        Interview interview1=interViewService.getInterViewByid(interview);
+        model.addAttribute("offerview",interview1);
+        return "main";
     }
 
 }

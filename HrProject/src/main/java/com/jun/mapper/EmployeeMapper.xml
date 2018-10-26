@@ -2,6 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.jun.dao.EmployeeDao">
     <insert id="addEmployee">
-        insert  into T_EMPLOYEE values (#{em_count},#{em_pass},#{em_position},#{em_indate},#{em_department},#{em_salary})
+        insert  into T_EMPLOYEE values(EMPLOYEE_SEQ.nextval,#{em_acount},#{em_position},#{em_indate},#{em_salary},#{em_sex},#{em_status},#{em_phone},#{em_pass})
     </insert>
+    <select id="getEmployee" resultType="com.jun.model.Employee">
+        select *from T_EMPLOYEE where EM_ACOUNT =#{em_acount}
+    </select>
 </mapper>

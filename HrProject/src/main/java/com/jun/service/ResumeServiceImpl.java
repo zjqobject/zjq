@@ -23,5 +23,13 @@ public class ResumeServiceImpl implements  ResumeService{
         return resumeDao.getResumeByid(resume);
     }
 
+    public int deleteResumeByid(Resume resume) {
+        return resumeDao.deleteResumeByid(resume);
+    }
+
+    public int updateResumeByid(Resume resume) {
+        return resumeDao.updateResumeByid(resume);
+    }
+
 
 }

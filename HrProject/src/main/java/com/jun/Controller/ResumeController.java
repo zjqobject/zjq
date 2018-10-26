@@ -1,9 +1,11 @@
 package com.jun.Controller;
 
 
+import com.jun.model.Interview;
 import com.jun.model.Recruit;
 import com.jun.model.Resume;
 import com.jun.model.Vistor;
+import com.jun.service.InterViewService;
 import com.jun.service.RecruitService;
 import com.jun.service.ResumeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +23,8 @@ public class ResumeController {
     private ResumeService resumeService;
     @Autowired
     private RecruitService recruitService;
+    @Autowired
+    private InterViewService interViewService;
     @RequestMapping("/addResumes")
     public String addResumes(Resume resume, Model model,HttpSession session)throws Exception{
         Vistor vistor= (Vistor) session.getAttribute("vst") ;
@@ -66,5 +70,43 @@ public class ResumeController {
         Resume resume=resumeService.getResumeByid(resume1);
         model.addAttribute("resume",resume);
         return "main";
+    }
+    @RequestMapping("/showResumeDetail1")
+    public String showResume1(Model model, int r_id , HttpServletRequest request)throws Exception{
+
+        Resume resume1= new Resume();
+        resume1.setR_id(r_id);
+        Resume resume=resumeService.getResumeByid(resume1);
+        model.addAttribute("resume",resume);
+        return "ResumeDetail";
+    }
+    @RequestMapping("/deleteResumes")
+    public String deletResumeByid( int r_id ,HttpSession session)throws Exception{
+        Resume resume1= new Resume();
+        resume1.setR_id(r_id);
+        Interview interview= new Interview();
+        interview.setIv_rid(r_id);
+        List<Interview> interviewList=interViewService.getInterViewByiv_rid(interview);
+     if(interviewList!=null){
+         session.setAttribute("ReERR","已投递，无法删除");
+     }
+     else{
+         resumeService.deleteResumeByid(resume1);
+     }
+        return "redirect:/showResumeAll";
+    }
+    @RequestMapping("/updateResume")
+    public String updateResume(Resume resume , HttpSession session)throws Exception{
+
+        Interview interview= new Interview();
+        interview.setIv_rid(resume.getR_id());
+        List<Interview> interviewList=interViewService.getInterViewByiv_rid(interview);
+        if(interviewList!=null){
+            session.setAttribute("ReERR","已投递，无法更新");
+        }
+        else{
+            resumeService.updateResumeByid(resume);
+        }
+        return "redirect:/showResumeAll";
     }
 }

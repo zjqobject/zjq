@@ -11,4 +11,7 @@ public interface InterViewDao {
      int updateInterViewReceive(Interview interview);
     int updateInterViewinvit(Interview interview);
     List<Interview>  getInterViewALL();
+    Interview getInterViewByid(Interview interview);
+    int updateInterViewofferid(Interview interview);
+    List<Interview>  getInterViewByiv_rid(Interview interview);
 }

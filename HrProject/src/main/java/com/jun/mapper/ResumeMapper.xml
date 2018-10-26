@@ -5,8 +5,79 @@
         insert  into  T_RESUME values (
            RESUME_SEQ.nextval,#{r_name},#{r_sex},#{r_college},#{r_specialty},#{r_education},#{r_evaluate},#{r_englevel},#{r_complevel},#{r_workexperience},#{r_address},#{r_email},#{r_naviteplace},#{r_phone},#{r_read},#{r_vid},#{r_nation},#{r_edusystem},#{r_height},#{r_postcode},#{r_educatexp},#{r_politics},#{r_borndate}
            )
-
     </insert>
+    <update id="updateResumeByid" parameterType="Resume">
+        update  T_RESUME
+        <set>
+            <if test="R_NAME!=null">
+                R_NAME=#{r_name},
+            </if>
+            <if test="R_SEX!=null">
+                R_SEX=#{r_sex},
+            </if>
+            <if test="R_COLLEGE!=null">
+                R_COLLEGE=#{r_college},
+            </if>
+            <if test="R_SPECIALTY!=null">
+                R_SPECIALTY=#{r_specialty},
+            </if>
+            <if test="R_EDUCATION!=null">
+                R_EDUCATION=#{r_education},
+            </if>
+            <if test="R_EVALUATE!=null">
+                R_EVALUATE=#{r_evaluate},
+            </if>
+            <if test="R_ENGLEVEL!=null">
+                R_ENGLEVEL=#{r_englevel},
+            </if>
+            <if test="R_COMPLEVEL!=null">
+                R_COMPLEVEL=#{r_complevel},
+            </if>
+            <if test="R_WORKEXPERIENCE!=null">
+                R_WORKEXPERIENCE=#{r_workexperience},
+            </if>
+            <if test="R_ADDRESS!=null">
+                R_ADDRESS=#{r_address},
+            </if>
+            <if test="R_EMAIL!=null">
+                R_EMAIL=#{r_email},
+            </if>
+            <if test="R_NAVITEPLACE!=null">
+                R_NAVITEPLACE=#{r_naviteplace},
+            </if>
+            <if test="R_PHONE!=null">
+                R_PHONE=#{r_phone},
+            </if>
+            <if test="R_VID!=null">
+                R_VID=#{r_vid},
+            </if>
+            <if test="R_NATION!=null">
+                R_NATION=#{r_nation},
+            </if>
+            <if test="R_EDUSYSTEM!=null">
+                R_EDUSYSTEM=#{r_edusystem},
+            </if>
+            <if test="R_HEIGHT!=null">
+                R_HEIGHT=#{r_height},
+            </if>
+            <if test="R_POSTCODE!=null">
+                R_POSTCODE=#{r_postcode},
+            </if>
+            <if test="R_EDUCATEXP!=null">
+                R_EDUCATEXP=#{r_educatexp},
+            </if>
+            <if test="R_POLITICS!=null">
+                R_POLITICS=#{r_politics},
+            </if>
+            <if test="R_BORNDATE!=null">
+                R_BORNDATE=#{r_borndate}
+            </if>
+        </set>
+        where R_id=#{r_id}
+    </update>
+    <delete id="deleteResumeByid">
+        delete from T_RESUME where R_ID=#{r_id}
+    </delete>
     <select id="getResumeByvid" resultType="com.jun.model.Resume">
         select  * from T_RESUME where R_VID=#{r_vid}
     </select>

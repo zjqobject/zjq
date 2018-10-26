@@ -1,5 +1,7 @@
 package com.jun.model;
 
+import java.util.Date;
+
 public class Interview {
     private int iv_id;
     private int iv_invit;
@@ -7,6 +9,33 @@ public class Interview {
     private String  iv_rename;
     private int iv_receive;
     private int iv_rid;
+    private Date iv_date;
+    private Date iv_offerDate;
+    private int iv_offerid;
+
+    public Date getIv_offerDate() {
+        return iv_offerDate;
+    }
+
+    public void setIv_offerDate(Date iv_offerDate) {
+        this.iv_offerDate = iv_offerDate;
+    }
+
+    public int getIv_offerid() {
+        return iv_offerid;
+    }
+
+    public void setIv_offerid(int iv_offerid) {
+        this.iv_offerid = iv_offerid;
+    }
+
+    public Date getIv_date() {
+        return iv_date;
+    }
+
+    public void setIv_date(Date iv_date) {
+        this.iv_date = iv_date;
+    }
 
     public int getIv_rid() {
         return iv_rid;

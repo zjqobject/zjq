@@ -71,16 +71,8 @@
         </div>
     </div>
 </div>
-<c:if test="${requestScope.interviewList!=null}"/>
-<table border="1" cellspacing="0" width="100%">
-    <tr>
-        <td>职位名称</td>
-        <td>求职人</td>
-        <td>offer</td>
-        <td>是否已接受面试</td>
-        <td colspan="2">录用/发送offer</td>
-    </tr>
-
+<div style="width: 960px; height: 800px; background:#fff;margin: auto;position: relative;z-index: 1">
+    <div style="width:800px; height:100% ; background-color: #ccffaa;margin: 0 auto" >
 
 
 <%
@@ -95,9 +87,10 @@
     <tr>
         <td>职位名称</td>
         <td>求职人</td>
-        <td>offer</td>
+        <td>查看简历</td>
+        <td>面试邀请</td>
         <td>是否已接受面试</td>
-        <td colspan="2">录用/发送offer</td>
+        <td colspan="2">录用</td>
 
     </tr>
         <%
@@ -106,43 +99,55 @@
     <tr>
         <td><%=interviewList.get(i).getIv_rename()%></td>
         <td><%=interviewList.get(i).getIv_vname()%></td>
+        <td><a href="showResumeDetail1?r_id=<%=interviewList.get(i).getIv_rid()%>">浏览</a></td>
             <%
                 if(interviewList.get(i).getIv_invit()==0){
             %>
-        <td>未发送offer</td>
-        <td>还未接受面试</td>
+
         <td>
-            <a href="updateInterViewinvit?iv_id=<%=interviewList.get(i).getIv_id()%>">发送offer</a>
+            <a href="updateInterViewinvit?iv_id=<%=interviewList.get(i).getIv_id()%>">发送邀请</a>
         </td>
-        <td>
-            <a href="deleteInterViewinvit?iv_id=<%=interviewList.get(i).getIv_id()%>">拒绝面试</a>
-        </td>
+        <td></td>
+        <td colspan="2"></td>
              <%
                 }
                  else{
+                     %>
+                     <td>已发送邀请</td>
+        <%
                         if(interviewList.get(i).getIv_receive()==0){
              %>
-        <td>已发送offer</td>
-        <td>还未接受面试</td>
+        <td>还未接受邀请</td>
         <td colspan="2"> </td>
              <%}
              else{
              %>
+        <td>已接受邀请</td>
+     <%   if(interviewList.get(i).getIv_offerid()==1){%>
 
-        <td>已发送offer</td>
-        <td>已接受面试</td>
-        <td>
-            <a href="addEmployee?interViewId=<%=interviewList.get(i).getIv_id()%>">录用</a>
-        </td>
-       <td>
-        <a href="deleteInterViewinvit?interViewId=<%=interviewList.get(i).getIv_id()%>">不录用</a>
-        </td>
+       <td colspan="2">已录用</td>
 
+        <%
+        }
+        else{
+            %>
+
+        <td colspan="2">
+            <a href="addEmployee?iv_id=<%=interviewList.get(i).getIv_id()%>">录用</a>
+        </td>
     </tr>
         <%
               }
                  }
             }
+            %>
+    </tr>
+            <%
+            }
+            %>
+            </table>
+        <h3>${sessionScope.addemployeeMSg}</h3>
+        <%
     }
    else{
        if(departmentList!=null){
@@ -151,28 +156,23 @@
               <tr>
                   <td>部门名称</td>
               </tr>
-                  <%
-                        for (int k = 0; k < departmentList.size(); k++) {
-
-                    %>
+                  <%for (int k = 0; k < departmentList.size(); k++) {%>
               <tr>
                   <td><%=departmentList.get(k).getDe_name()%></td>
               </tr>
               <%
                   }
-                }
+       }
+   }
               %>
           </table>
               <form action="addDepartment" method="post" id="addDepartmentform">
                  <label >添加部门：</label><input type="text" name="de_name">
                   确认添加：<input type="submit" value="添加">
               </form>
-
-           <%
-
-   }
-   %>
-
+            <span>${sessionScope.addemErr}</span>
+</div>
+</div>
 </body>
 </html>
 
