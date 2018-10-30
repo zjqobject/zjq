@@ -44,12 +44,10 @@
 <div class="head">
 <div class="container">
     <div class="x12">
+        <a href="#" style="text-decoration: none ">
+            <img src="/images/logo1.png">
+        </a>
         <ul class="nav nav-meau nav-inline nav-pills nav-navicon" >
-            <li class="nav-head">
-                <a href="#" style="text-decoration: none ">
-                    <img src="/images/logo1.png">
-                </a>
-            </li>
             <li class="onelevelmenu"><a style="text-decoration: none ">关于公司</a></li>
             <li class="onelevelmenu"><a href="showResumeAll"  style="text-decoration: none ">我的简历</a></li>
             <li class="onelevelmenu"><a href="../../addResume.jsp"  style="text-decoration: none ">填写简历</a></li>
@@ -199,7 +197,7 @@
     <%--个人简历界面--%>
     <form  method="post" action="updateResume" id="updateResumeForm">
         <h3 align="center">个人简历</h3>
-        <input type="hidden" name="r_id"  value="<%=resume.getR_name()%>">
+        <input type="hidden" name="r_id"  value="<%=resume.getR_id()%>">
         <table border="1" align="center">
         <!--第一行-->
         <tr>
@@ -309,10 +307,11 @@
             </tr>
                 <% for (int i = 0; i < interviewList.size(); i++) {%>
             <tr>
-                <td><%=interviewList.get(i).getIv_rename()%></td>
+                <td><%=interviewList.get(i).getIv_poname()%></td>
                 <td><%=interviewList.get(i).getIv_vname()%></td>
                     <%   if(interviewList.get(i).getIv_invit()==0){%>
                 <td>未收到</td>
+                <td></td>
                 <td></td>
                     <%
                          }
@@ -359,7 +358,7 @@
         if (interviewMsg!=null){
     %>
                 <h3> <%=interviewMsg.getIv_vname()%> 先生你好</h3>
-                <h3>您投递的 <%=interviewMsg.getIv_rename()%> 岗位请求已收到，请于 后天上午10点来我司面试</h3>
+                <h3>您投递的 <%=interviewMsg.getIv_poname()%> 岗位请求已收到，请于 后天上午10点来我司面试</h3>
                 <h3>谢谢</h3>
                 <h3>日期：<fmt:formatDate value="<%=interviewMsg .getIv_date() %>" pattern="yyyy年MM月dd日" />    </h3>
             <%
@@ -370,7 +369,7 @@
         if (offerview!=null){
     %>
                 <h3> <%=offerview.getIv_vname()%> 先生（女士）你好</h3>
-                <h3>您投递的 <%=offerview.getIv_rename()%> 岗位请求已收到，请于 后天上午9点准时上班</h3>
+                <h3>您投递的 <%=offerview.getIv_poname()%> 岗位请求已收到，请于 后天上午9点准时上班</h3>
                 <h3>谢谢</h3>
                 <h3>日期：<fmt:formatDate value="<%=offerview.getIv_offerDate()%>" pattern="yyyy年MM月dd日" />    </h3>
                     <%

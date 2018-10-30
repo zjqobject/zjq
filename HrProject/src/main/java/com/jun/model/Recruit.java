@@ -2,7 +2,7 @@ package com.jun.model;
 
 public class Recruit {
     private int re_id;
-    private String re_position;
+    private int re_poid;
     private int re_salarylow;
     private int re_salarytop;
     private String re_needs;
@@ -10,6 +10,15 @@ public class Recruit {
     private int re_years;
     private String  re_welfare;
     private String re_address;
+    private String re_position;
+
+    public String getRe_position() {
+        return re_position;
+    }
+
+    public void setRe_position(String re_position) {
+        this.re_position = re_position;
+    }
 
     public String getRe_address() {
         return re_address;
@@ -35,12 +44,12 @@ public class Recruit {
         this.re_salarytop = re_salarytop;
     }
 
-    public String getRe_position() {
-        return re_position;
+    public int getRe_poid() {
+        return re_poid;
     }
 
-    public void setRe_position(String re_position) {
-        this.re_position = re_position;
+    public void setRe_poid(int re_poid) {
+        this.re_poid = re_poid;
     }
 
     public int getRe_id() {

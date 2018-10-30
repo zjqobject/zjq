@@ -6,14 +6,40 @@ public class Employee {
     private int em_id;
     private String em_acount;
     private String em_pass;
-    private  String em_position;
+    private  int em_poid;
     private Date em_indate;
     private int em_salary;
     private String em_phone;
     private String em_sex;
     private int em_status;
+    private String em_position;
+    private String em_department;
+
+    public String getEm_position() {
+        return em_position;
+    }
+
+    public void setEm_position(String em_position) {
+        this.em_position = em_position;
+    }
+
+    public String getEm_department() {
+        return em_department;
+    }
+
+    public void setEm_department(String em_department) {
+        this.em_department = em_department;
+    }
 
     public Employee() {
+    }
+
+    public int getEm_poid() {
+        return em_poid;
+    }
+
+    public void setEm_poid(int em_poid) {
+        this.em_poid = em_poid;
     }
 
     public String getEm_acount() {
@@ -63,14 +89,6 @@ public class Employee {
 
     public void setEm_pass(String em_pass) {
         this.em_pass = em_pass;
-    }
-
-    public String getEm_position() {
-        return em_position;
-    }
-
-    public void setEm_position(String em_position) {
-        this.em_position = em_position;
     }
 
     public Date getEm_indate() {

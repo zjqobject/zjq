@@ -5,13 +5,39 @@ import java.util.Date;
 public class Interview {
     private int iv_id;
     private int iv_invit;
-    private String iv_vname;
-    private String  iv_rename;
+    private int iv_vid;
+    private int iv_reid;
     private int iv_receive;
     private int iv_rid;
     private Date iv_date;
     private Date iv_offerDate;
     private int iv_offerid;
+    private String iv_vname;
+    private String iv_poname;
+
+    public String getIv_vname() {
+        return iv_vname;
+    }
+
+    public void setIv_vname(String iv_vname) {
+        this.iv_vname = iv_vname;
+    }
+
+    public String getIv_poname() {
+        return iv_poname;
+    }
+
+    public void setIv_poname(String iv_poname) {
+        this.iv_poname = iv_poname;
+    }
+
+    public int getIv_reid() {
+        return iv_reid;
+    }
+
+    public void setIv_reid(int iv_reid) {
+        this.iv_reid = iv_reid;
+    }
 
     public Date getIv_offerDate() {
         return iv_offerDate;
@@ -72,19 +98,12 @@ public class Interview {
         this.iv_invit = iv_invit;
     }
 
-    public String getIv_vname() {
-        return iv_vname;
+    public int getIv_vid() {
+        return iv_vid;
     }
 
-    public void setIv_vname(String iv_vname) {
-        this.iv_vname = iv_vname;
-    }
-
-    public String getIv_rename() {
-        return iv_rename;
-    }
-
-    public void setIv_rename(String iv_rename) {
-        this.iv_rename = iv_rename;
+    public void setIv_vid(int iv_vid) {
+        this.iv_vid = iv_vid;
     }
 }
+

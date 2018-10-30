@@ -12,6 +12,9 @@
     <select id="getVistor" resultType="com.jun.model.Vistor">
         select * from T_VISTOR
         <where>
+            <if test="v_id!=null and v_id!=''">
+                and V_ID=#{v_id}
+            </if>
             <if test="v_name!=null and v_name!=''">
                 and V_NAME=#{v_name}
             </if>

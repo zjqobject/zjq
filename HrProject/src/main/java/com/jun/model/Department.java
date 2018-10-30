@@ -1,8 +1,19 @@
 package com.jun.model;
 
+import java.util.Date;
+
 public class Department {
     private  int de_id;
     private  String de_name;
+    private Date de_createdate;
+
+    public Date getDe_createdate() {
+        return de_createdate;
+    }
+
+    public void setDe_createdate(Date de_createdate) {
+        this.de_createdate = de_createdate;
+    }
 
     public int getDe_id() {
         return de_id;

@@ -6,35 +6,53 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1407f90-1e89-40ef-924c-8500196d1a36" name="Default Changelist" comment="增加部门增删改查">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jun/Controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jun/model/SendInvit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/EmployeeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/ResumeDetail.jsp" afterDir="false" />
+    <list default="true" id="d1407f90-1e89-40ef-924c-8500196d1a36" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jun/Controller/PositonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jun/dao/PositionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jun/mapper/PositionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/PositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/PositionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/web/addDepartAndPosition.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/web/addRecruit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/web/updateDepartment.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/web/updatePosition.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/741b86f5-64f5-4fb4-a3a7-7b79a88aab50.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/741b86f5-64f5-4fb4-a3a7-7b79a88aab50.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/741b86f5-64f5-4fb4-a3a7-7b79a88aab50/storage_v2/_src_/schema/SCOTT.v0axBA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/741b86f5-64f5-4fb4-a3a7-7b79a88aab50/storage_v2/_src_/schema/SCOTT.v0axBA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/WEB-INF/classes/com/jun/mapper/VistorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/WEB-INF/classes/com/jun/mapper/VistorMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HrProject_war_exploded/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/Controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/Controller/DepartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/Controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/Controller/EmployeeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/Controller/InterViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/Controller/InterViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/Controller/ResumeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/Controller/ResumeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/Controller/RecruitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/Controller/RecruitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/dao/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/dao/DepartmentDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/dao/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/dao/EmployeeDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/dao/InterViewDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/dao/InterViewDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/dao/ResumeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/dao/ResumeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/dao/RecruitDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/dao/RecruitDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/mapper/DepartmetMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/mapper/DepartmetMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/mapper/EmployeeMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/mapper/InterViewMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/mapper/InterViewMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/mapper/ResumeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/mapper/ResumeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/mapper/RecruitMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/mapper/RecruitMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/mapper/VistorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/mapper/VistorMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/model/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/model/Department.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/model/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/model/Interview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/model/Interview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/model/Recruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/model/Recruit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/model/SendInvit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/DepartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/service/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/DepartmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/service/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/EmployeeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/service/InterViewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/InterViewService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/service/InterViewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/InterViewServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/service/ResumeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/ResumeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/service/ResumeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/ResumeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/interview.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/service/RecruitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/RecruitService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jun/service/RecruitServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jun/service/RecruitServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/ResumeDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/ResumeDetail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/manager.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/web/addResume.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/addResume.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/web/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jun/mapper/VistorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jun/mapper/VistorMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,6 +114,20 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="SCOTT: schema" type="ac44c5e0:OracleImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="T_POSITION: table" type="be4db629:OracleImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="SCOTT: schema" type="ac44c5e0:OracleImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="T_RECRUIT: table" type="be4db629:OracleImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="SCOTT: schema" type="ac44c5e0:OracleImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="T_RESUME: table" type="be4db629:OracleImplModel$Table" />
       </path>
       <path>
@@ -122,7 +154,7 @@
     <session id="-1839874136">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.39" value="1" />
@@ -130,180 +162,111 @@
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.61" value="1" />
-          <entry key="project.open.time.67" value="1" />
+          <entry key="project.open.time.67" value="2" />
+          <entry key="project.open.time.69" value="1" />
           <entry key="project.open.time.78" value="1" />
-          <entry key="project.open.time.85" value="1" />
+          <entry key="project.open.time.80" value="1" />
+          <entry key="project.open.time.85" value="2" />
+          <entry key="project.open.time.87" value="1" />
           <entry key="project.open.time.90" value="1" />
           <entry key="project.open.time.94" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="POSITION_SEQ" value="2" />
           <entry key="RECRUIT" value="4" />
           <entry key="RECRUIT_SEQ" value="2" />
           <entry key="SpringLocalModels/module=HrProject" value="1" />
-          <entry key="T_DEPARTMENT" value="2" />
-          <entry key="T_EMPLOYEE" value="5" />
-          <entry key="T_INTERVIEW" value="15" />
-          <entry key="T_POSITION" value="2" />
-          <entry key="T_RECRUIT" value="13" />
-          <entry key="T_RESUME" value="12" />
+          <entry key="T_DEPARTMENT" value="13" />
+          <entry key="T_EMPLOYEE" value="13" />
+          <entry key="T_INTERVIEW" value="21" />
+          <entry key="T_POSITION" value="14" />
+          <entry key="T_RECRUIT" value="20" />
+          <entry key="T_RESUME" value="16" />
           <entry key="T_SENDINVIT" value="1" />
-          <entry key="T_VISTOR" value="12" />
+          <entry key="T_VISTOR" value="14" />
           <entry key="VISTOR" value="1" />
           <entry key="VIS_SEQ" value="5" />
           <entry key="class" value="1" />
-          <entry key="css" value="16" />
+          <entry key="css" value="17" />
           <entry key="html" value="2" />
-          <entry key="java" value="368" />
+          <entry key="java" value="562" />
           <entry key="jpg" value="6" />
           <entry key="js" value="44" />
-          <entry key="jsp" value="129" />
+          <entry key="jsp" value="213" />
           <entry key="png" value="5" />
           <entry key="properties" value="5" />
-          <entry key="sql" value="20" />
+          <entry key="sql" value="21" />
           <entry key="tld" value="1" />
           <entry key="vistor" value="1" />
-          <entry key="xml" value="127" />
+          <entry key="xml" value="171" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="CSS" value="16" />
-          <entry key="Database Element" value="68" />
+          <entry key="CSS" value="17" />
+          <entry key="Database Element" value="118" />
           <entry key="HTML" value="2" />
           <entry key="Image" value="11" />
-          <entry key="JAVA" value="368" />
-          <entry key="JSP" value="129" />
+          <entry key="JAVA" value="562" />
+          <entry key="JSP" value="213" />
           <entry key="JavaScript" value="44" />
           <entry key="Properties" value="5" />
-          <entry key="SQL" value="9" />
-          <entry key="Scratch" value="18" />
+          <entry key="SQL" value="11" />
+          <entry key="Scratch" value="19" />
           <entry key="UML" value="1" />
-          <entry key="XML" value="128" />
+          <entry key="XML" value="172" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="117" />
+          <entry key="cell" value="118" />
           <entry key="css" value="252" />
           <entry key="html" value="53" />
-          <entry key="java" value="5571" />
+          <entry key="java" value="8031" />
           <entry key="js" value="4" />
-          <entry key="jsp" value="5810" />
+          <entry key="jsp" value="9034" />
           <entry key="properties" value="155" />
-          <entry key="sql" value="425" />
-          <entry key="txt" value="62" />
-          <entry key="xml" value="2044" />
+          <entry key="sql" value="460" />
+          <entry key="txt" value="115" />
+          <entry key="xml" value="2342" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="252" />
           <entry key="HTML" value="53" />
-          <entry key="JAVA" value="5571" />
-          <entry key="JSP" value="5810" />
+          <entry key="JAVA" value="8031" />
+          <entry key="JSP" value="9034" />
           <entry key="JavaScript" value="4" />
-          <entry key="PLAIN_TEXT" value="62" />
+          <entry key="PLAIN_TEXT" value="115" />
           <entry key="Properties" value="155" />
-          <entry key="SQL" value="321" />
-          <entry key="Scratch" value="275" />
-          <entry key="XML" value="1990" />
+          <entry key="SQL" value="358" />
+          <entry key="Scratch" value="276" />
+          <entry key="XML" value="2286" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/Controller/EmployeeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="53" column="34" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/mapper/ResumeMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1034">
-              <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/dao/ResumeDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://741b86f5-64f5-4fb4-a3a7-7b79a88aab50/schema/SCOTT/table/T_RESUME">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/manager.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="172" column="42" selection-start-line="172" selection-start-column="42" selection-end-line="172" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/Controller/InterViewController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/main.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/web/updatePosition.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2553">
-              <caret line="304" column="31" lean-forward="true" selection-start-line="304" selection-start-column="31" selection-end-line="304" selection-end-column="31" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="514">
+              <caret line="111" column="52" selection-start-line="111" selection-start-column="52" selection-end-line="111" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/web/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/web/updateDepartment.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="58" column="10" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/Controller/RecruitController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+            <state relative-caret-position="367">
+              <caret line="87" column="59" selection-start-line="87" selection-start-column="59" selection-end-line="87" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -311,11 +274,77 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/Controller/ResumeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
+            <state relative-caret-position="575">
               <caret line="104" column="53" selection-start-line="104" selection-start-column="53" selection-end-line="104" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/web/addDepartAndPosition.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-577">
+              <caret line="44" column="33" lean-forward="true" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/web/addRecruit.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="119" column="15" selection-start-line="119" selection-start-column="15" selection-end-line="119" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/web/addResume.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/Controller/PositonController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="70" column="38" lean-forward="true" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/web/register.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/manager.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="836">
+              <caret line="233" column="28" lean-forward="true" selection-start-line="233" selection-start-column="28" selection-end-line="233" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/dao/PositionDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -331,9 +360,9 @@
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="Mybatis Mapper" />
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -349,57 +378,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/RecruitServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/Controller/RecruitController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/mapper/RecruitMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/mapper/EmployeeDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/model/Department.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/model/Position.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/mapper/DepartmetDao.xml" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/741b86f5-64f5-4fb4-a3a7-7b79a88aab50/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/dao/DepartmetDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/mapper/DepartmetMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/DepartmentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/dao/DepartmentDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/DepartmentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/Controller/DepartmentController.java" />
-        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/main1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/web/css/main.css" />
-        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/html.html" />
-        <option value="$PROJECT_DIR$/src/main/web/updateResume.jsp" />
-        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/interview.jsp" />
-        <option value="$PROJECT_DIR$/src/main/web/invit.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/model/SendInvit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/mapper/SendInvitDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/dao/SendInvitDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/SendInvit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/SendInvitService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/SendInvitServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/mapper/SendInvitMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jun/Controller/SendInvitController.java" />
         <option value="$PROJECT_DIR$/src/main/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/ResumeDetail.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/EmployeeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/EmployeeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/Controller/VistorController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/model/Employee.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/model/Interview.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/Controller/InterViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/dao/EmployeeDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/mapper/EmployeeMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/Controller/EmployeeController.java" />
-        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/manager.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/mapper/InterViewMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jun/dao/ResumeDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/InterViewService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/InterViewServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jun/dao/InterViewDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jun/service/ResumeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jun/service/ResumeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jun/mapper/ResumeMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jun/Controller/ResumeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/mapper/PositionDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/Position.java" />
+        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/addRecruit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/mapper/InterViewMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/dao/InterViewDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/model/Recruit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/model/Interview.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/InterViewServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/InterViewService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/mapper/VistorMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/dao/EmployeeDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/EmployeeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/EmployeeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/dao/RecruitDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/RecruitService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/RecruitServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/Controller/VistorController.java" />
+        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/ResumeDetail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/web/addResume.jsp" />
+        <option value="$PROJECT_DIR$/src/main/web/register.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/Controller/RecruitController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/mapper/RecruitMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/web/addRecruit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/Controller/InterViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/model/Department.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/model/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/main.jsp" />
+        <option value="$PROJECT_DIR$/src/main/web/addDepartAndPosition.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/mapper/EmployeeMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/web/updateDepartment.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/mapper/DepartmetMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/dao/PositionDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/mapper/PositionMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/dao/DepartmentDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/DepartmentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/DepartmentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/PositionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/service/PositionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/Controller/DepartmentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/Controller/EmployeeController.java" />
+        <option value="$PROJECT_DIR$/src/main/web/WEB-INF/pages/manager.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jun/Controller/PositonController.java" />
+        <option value="$PROJECT_DIR$/src/main/web/updatePosition.jsp" />
       </list>
     </option>
   </component>
@@ -428,8 +457,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="81" />
-    <option name="y" value="25" />
+    <option name="x" value="39" />
+    <option name="y" value="147" />
     <option name="width" value="1147" />
     <option name="height" value="775" />
   </component>
@@ -458,8 +487,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -543,6 +572,15 @@
               <item name="HrProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jun" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HrProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HrProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -551,14 +589,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HrProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HrProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HrProject" type="b2602c69:ProjectViewProjectNode" />
@@ -590,7 +620,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -598,7 +628,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540470826836" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540834374813" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="E:/jdbc/javamall" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -735,6 +765,11 @@
       <workItem from="1540382888662" duration="17499000" />
       <workItem from="1540429814392" duration="35676000" />
       <workItem from="1540475804610" duration="18323000" />
+      <workItem from="1540516134332" duration="20343000" />
+      <workItem from="1540553093739" duration="17475000" />
+      <workItem from="1540602421887" duration="31037000" />
+      <workItem from="1540715987888" duration="11120000" />
+      <workItem from="1540787109293" duration="26062000" />
     </task>
     <task id="LOCAL-00001" summary="登录注册界面css写完">
       <created>1539998696401</created>
@@ -799,11 +834,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540432834857</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="游客部分全部写完，手法面试邀请，收发查看offer,添加员工，部门做完">
+      <created>1540516306798</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1540516306798</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="288996000" />
+    <option name="totallyTimeSpent" value="395033000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -816,9 +858,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8861538" visible="true" weight="0.22995462" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8861538" visible="true" weight="0.21255673" />
       <window_info id="Structure" order="1" sideWeight="0.11384615" side_tool="true" weight="0.36611196" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -828,8 +869,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.15132606" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.10769231" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.0076923077" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32923076" />
@@ -838,7 +879,7 @@
       <window_info anchor="bottom" id="Database Console" order="9" weight="0.27076924" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.7753846" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3276923" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32923076" />
@@ -850,11 +891,11 @@
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32753405" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.19818456" />
+      <window_info anchor="right" id="Database" order="8" weight="0.071104385" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8861538" visible="true" weight="0.36611196" />
-      <window_info id="Structure" order="1" sideWeight="0.11384615" side_tool="true" visible="true" weight="0.36611196" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8861538" visible="true" weight="0.21255673" />
+      <window_info id="Structure" order="1" sideWeight="0.11384615" side_tool="true" weight="0.36611196" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
@@ -863,8 +904,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.15132606" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.0076923077" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32923076" />
@@ -873,7 +914,7 @@
       <window_info anchor="bottom" id="Database Console" order="9" weight="0.27076924" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.7753846" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3276923" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32923076" />
@@ -885,7 +926,7 @@
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32753405" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.075642966" />
+      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.071104385" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -900,123 +941,84 @@
     <MESSAGE value="用户部分基本写完" />
     <MESSAGE value="用户部分除css布局外基本写完" />
     <MESSAGE value="增加部门增删改查" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加部门增删改查" />
+    <MESSAGE value="游客部分全部写完，手法面试邀请，收发查看offer,添加员工，部门做完" />
+    <option name="LAST_COMMIT_MESSAGE" value="游客部分全部写完，手法面试邀请，收发查看offer,添加员工，部门做完" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/SendInvitService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/SendInvitServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/mapper/SendInvitMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/Controller/SendInvitController.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/model/Recruit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-621">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        <state relative-caret-position="322">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/InterViewServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-505" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/VistorServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="230">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/VistorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/invit.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://741b86f5-64f5-4fb4-a3a7-7b79a88aab50/schema/SCOTT/table/T_POSITION">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-          <column-attributes>
-            <column name="ROWID" enabled="false" />
-          </column-attributes>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://741b86f5-64f5-4fb4-a3a7-7b79a88aab50/schema/SCOTT/table/T_RECRUIT">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-          <column-attributes>
-            <column name="ROWID" enabled="false" />
-          </column-attributes>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/DepartmentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/DepartmentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/addResume.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1955">
-          <caret line="100" column="77" lean-forward="true" selection-start-line="100" selection-start-column="77" selection-end-line="100" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/updateResume.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/InterViewService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <caret line="13" column="52" lean-forward="true" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/dao/RecruitDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="1334">
+          <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="das://741b86f5-64f5-4fb4-a3a7-7b79a88aab50/schema/SCOTT/table/T_EMPLOYEE">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/RecruitService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/RecruitServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/model/Interview.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/EmployeeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/741b86f5-64f5-4fb4-a3a7-7b79a88aab50/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://741b86f5-64f5-4fb4-a3a7-7b79a88aab50/schema/SCOTT/table/T_RESUME">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-          <column-attributes>
-            <column name="ROWID" enabled="false" />
-          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://741b86f5-64f5-4fb4-a3a7-7b79a88aab50/schema/SCOTT/table/T_VISTOR">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1030,14 +1032,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/mapper/EmployeeMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/dao/InterViewDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="61" lean-forward="true" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+        <state relative-caret-position="253">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="das://741b86f5-64f5-4fb4-a3a7-7b79a88aab50/schema/SCOTT/table/T_DEPARTMENT">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/model/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://741b86f5-64f5-4fb4-a3a7-7b79a88aab50/schema/SCOTT/table/T_RECRUIT">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1047,202 +1056,191 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/model/Position.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/EmployeeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="360">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/model/Department.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+    <entry file="das://741b86f5-64f5-4fb4-a3a7-7b79a88aab50/schema/SCOTT/table/T_EMPLOYEE">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+          <column-attributes>
+            <column name="ROWID" enabled="false" />
+          </column-attributes>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/model/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding>
-            <element signature="e#1603#1604#0" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/model/Interview.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding>
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/mapper/InterViewMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/InterViewService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/InterViewServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#913#914#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1081#1082#0" expanded="true" />
-            <element signature="e#1143#1144#0" expanded="true" />
-            <element signature="e#1207#1208#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1338#1339#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/dao/InterViewDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="das://741b86f5-64f5-4fb4-a3a7-7b79a88aab50/schema/SCOTT/table/T_POSITION">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+          <column-attributes>
+            <column name="ROWID" enabled="false" />
+          </column-attributes>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/dao/EmployeeDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/dao/DepartmentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/ResumeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/ResumeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-            <element signature="e#787#788#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/EmployeeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/Controller/DepartmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/ResumeDetail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="103" column="12" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/EmployeeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/mapper/DepartmetMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/Controller/VistorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/manager.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="172" column="42" selection-start-line="172" selection-start-column="42" selection-end-line="172" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="58" column="10" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+        <state relative-caret-position="161">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/Controller/RecruitController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        <state relative-caret-position="368">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://741b86f5-64f5-4fb4-a3a7-7b79a88aab50/schema/SCOTT/table/T_DEPARTMENT">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/ResumeDetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5018">
+          <caret line="299" column="16" lean-forward="true" selection-start-line="299" selection-start-column="16" selection-end-line="299" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/model/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/dao/ResumeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/mapper/EmployeeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/mapper/InterViewMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="94" selection-start-line="4" selection-start-column="94" selection-end-line="4" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/mapper/RecruitMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="78" selection-start-line="5" selection-start-column="78" selection-end-line="5" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/mapper/ResumeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/dao/RecruitDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/mapper/DepartmetMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/mapper/PositionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/dao/DepartmentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/DepartmentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/DepartmentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+          <folding>
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+            <element signature="e#956#957#0" expanded="true" />
+            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#1038#1039#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/PositionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/service/PositionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+          <folding>
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/Controller/InterViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+        <state relative-caret-position="575">
+          <caret line="116" column="29" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1251,38 +1249,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/Controller/EmployeeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="53" column="34" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="42" />
+        <state relative-caret-position="390">
+          <caret line="92" column="25" lean-forward="true" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://741b86f5-64f5-4fb4-a3a7-7b79a88aab50/schema/SCOTT/table/T_RESUME">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/Controller/DepartmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1840">
+          <caret line="80" column="30" lean-forward="true" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/mapper/ResumeMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/Controller/VistorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+        <state relative-caret-position="23">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/dao/ResumeDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/web/addRecruit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="575">
+          <caret line="119" column="15" selection-start-line="119" selection-start-column="15" selection-end-line="119" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/updateDepartment.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="87" column="59" selection-start-line="87" selection-start-column="59" selection-end-line="87" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/Controller/ResumeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
+        <state relative-caret-position="575">
           <caret line="104" column="53" selection-start-line="104" selection-start-column="53" selection-end-line="104" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1290,14 +1298,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/main.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/web/addDepartAndPosition.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2553">
-          <caret line="304" column="31" lean-forward="true" selection-start-line="304" selection-start-column="31" selection-end-line="304" selection-end-column="31" />
+        <state relative-caret-position="-577">
+          <caret line="44" column="33" lean-forward="true" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/dao/PositionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/addResume.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/pages/manager.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="233" column="28" lean-forward="true" selection-start-line="233" selection-start-column="28" selection-end-line="233" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jun/Controller/PositonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="70" column="38" lean-forward="true" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web/updatePosition.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="111" column="52" selection-start-line="111" selection-start-column="52" selection-end-line="111" selection-end-column="52" />
         </state>
       </provider>
     </entry>

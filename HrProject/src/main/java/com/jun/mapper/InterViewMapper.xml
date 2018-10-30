@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.jun.dao.InterViewDao">
     <insert id="addInterView">
-        insert  into T_INTERVIEW values (INTERVIEW_SEQ.nextval,#{iv_invit},#{iv_vname},#{iv_rename},#{iv_receive},#{iv_rid},#{iv_date},#{iv_offerDate},#{iv_offerid})
+        insert  into T_INTERVIEW values (INTERVIEW_SEQ.nextval,#{iv_invit},#{iv_vid},#{iv_reid},#{iv_receive},#{iv_rid},#{iv_date},#{iv_offerDate},#{iv_offerid})
     </insert>
     <update id="updateInterViewReceive">
         update  T_INTERVIEW set IV_RECEIVE=#{iv_receive} where IV_ID=#{iv_id}
@@ -14,11 +14,11 @@
          update  T_INTERVIEW set IV_OFFERID=#{iv_offerid},IV_OFFERDATE=#{iv_offerDate} where IV_ID=#{iv_id}
     </update>
 
-    <select id="getInterViewByiv_vname" resultType="com.jun.model.Interview">
-               select  * from T_INTERVIEW where iv_vname=#{iv_vname}
+    <select id="getInterViewByiv_vid" resultType="com.jun.model.Interview">
+               select  * from T_INTERVIEW where IV_VID=#{iv_vid}
     </select>
     <select id="getInterView" resultType="com.jun.model.Interview">
-        select  * from T_INTERVIEW where iv_vname=#{iv_vname} and iv_rename=#{iv_rename}
+        select  * from T_INTERVIEW where IV_VID=#{iv_vid} and IV_REID=#{iv_reid}
     </select>
     <select id="getInterViewALL" resultType="com.jun.model.Interview">
         select  * from T_INTERVIEW

@@ -20,8 +20,8 @@ public class InterViewServiceImpl implements InterViewService{
         return interViewDao.getInterView(interview);
     }
 
-    public List<Interview> getInterViewByiv_vname(Interview interview) {
-        return interViewDao.getInterViewByiv_vname(interview);
+    public List<Interview> getInterViewByiv_vid(Interview interview) {
+        return interViewDao.getInterViewByiv_vid(interview);
     }
 
     public int updateInterViewReceive(Interview interview) {

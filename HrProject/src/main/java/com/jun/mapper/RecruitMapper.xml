@@ -3,7 +3,7 @@
 <mapper namespace="com.jun.dao.RecruitDao">
 
     <insert id="addRecruit">
-          insert  into  T_RECRUIT values (RECRUIT_SEQ.nextval,RE_SALARYLOW)
+          insert  into  T_RECRUIT values (RECRUIT_SEQ.nextval,#{re_salarylow}, #{re_education},#{re_years},#{re_welfare},#{re_salarytop},#{re_poid},#{re_needs},#{re_address})
     </insert>
 
     <select id="getRecruitListAll" parameterType="Map" resultType="com.jun.model.Recruit">
@@ -14,5 +14,8 @@
     </select>
     <select id="getRecruitByre_id" resultType="com.jun.model.Recruit">
         select *from  T_RECRUIT where re_id=#{re_id}
+    </select>
+    <select id="getRecruitByre_poid" resultType="com.jun.model.Recruit">
+        select *from  T_RECRUIT where RE_POID=#{po_id}
     </select>
 </mapper>

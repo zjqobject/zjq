@@ -2,12 +2,21 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.jun.dao.DepartmentDao">
     <insert id="addDepartment">
-        insert  into  T_DEPARTMENT values (DEPARTMENT_SEQ.nextval,#{de_name})
+        insert  into  T_DEPARTMENT values (DEPARTMENT_SEQ.nextval,#{de_name},#{de_createdate})
     </insert>
+    <update id="updateDepartment">
+        update  T_DEPARTMENT set DE_NAME=#{de_name} where de_id=#{de_id}
+    </update>
+    <delete id="deleteDepartment">
+        delete  from T_DEPARTMENT where  where de_id=#{de_id}
+    </delete>
     <select id="getDepartmentAll" resultType="com.jun.model.Department">
           select * from T_DEPARTMENT
     </select>
     <select id="getDepartment" resultType="com.jun.model.Department">
         select * from T_DEPARTMENT where DE_NAME=#{de_name}
+    </select>
+    <select id="getDepartmentByid" resultType="com.jun.model.Department">
+        select * from T_DEPARTMENT where DE_ID=#{de_id}
     </select>
 </mapper>

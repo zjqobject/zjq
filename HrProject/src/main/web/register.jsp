@@ -8,10 +8,11 @@
 <head>
     <base href="<%=basePath%>"/>
     <title>注册</title>
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="js/messages_zh.js"></script>>
+    <script type="text/javascript" src="js/messages_zh.js"></script>
     <script >
         $().ready(function() {
 // 在键盘按下并释放及提交后验证提交表单

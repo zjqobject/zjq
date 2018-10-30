@@ -10,4 +10,5 @@ public interface RecruitService {
     List<Recruit> getRecruitListAll(HashMap<String ,Object> map);
     List<Recruit> getRecruitAll();
     Recruit getRecruitByre_id(Recruit recruit);
+    Recruit getRecruitByre_poid(Recruit recruit);
 }

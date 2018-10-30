@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jun.dao.PositionDao">
+
+    <insert id="addPosition" parameterType="Position">
+        insert into T_POSITION  values (POSITION_SEQ.nextval ,#{po_name},#{po_deid})
+    </insert>
+    <delete id="deletePosition">
+        delete  from T_POSITION where PO_DEID=#{po_deid}
+    </delete>
+    <select id="getaddPositionByname" resultType="com.jun.model.Position">
+        select  * from  T_POSITION  where PO_NAME=#{po_name}
+    </select>
+    <select id="getaddPositionBypoid" resultType="com.jun.model.Position">
+        select  * from  T_POSITION  where PO_ID=#{po_id}
+    </select>
+    <select id="getPositionAll" resultType="com.jun.model.Position">
+        select  * from T_POSITION
+    </select>
+    <select id="getPositionBypo_deid" resultType="com.jun.model.Position">
+        select  *from  T_POSITION where PO_DEID=#{po_deid}
+    </select>
+</mapper>

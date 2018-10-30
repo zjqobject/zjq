@@ -14,8 +14,44 @@
 <head>
     <base href="<%=basePath%>"/>
     <title>Title</title>
+    <style type="text/css">
+        td{
+            text-align:center;
+            width:80px;
+            height:30px;
+        }
+        input{
+            width:98%;
+            height:98%;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/pintuer2/css/pintuer.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <script type="text/javascript" src="/pintuer2/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="/pintuer2/js/pintuer.js"></script>
+    <script type="text/javascript" src="/pintuer2/js/respond.js"></script>
 </head>
-<body>
+<body >
+<div class="head">
+    <div class="container">
+        <div class="x12">
+            <ul class="nav nav-meau nav-inline nav-pills nav-navicon" >
+                <li class="nav-head">
+                    <a href="#" style="text-decoration: none ">
+                        <img src="/images/logo1.png">
+                    </a>
+                </li>
+                <li class="onelevelmenu"><a style="text-decoration: none ">关于公司</a></li>
+                <li class="onelevelmenu"><a href="showResumeAll"  style="text-decoration: none ">我的简历</a></li>
+                <li class="onelevelmenu"><a href="../../addResume.jsp"  style="text-decoration: none ">填写简历</a></li>
+                <li class="onelevelmenu"><a href="showInterview" style="text-decoration: none ">投递信息</a></li>
+                <li class="onelevelmenu"><a href="showRecruit?currentPage=1" style="text-decoration: none ">加入我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div style="width: 960px; height: 800px; background:#fff;margin: auto;position: relative;z-index: 1">
+    <div style="width:800px; height:100% ; background-color: #ccffaa;margin: 0 auto" >
 <form action="addResumes" method="post" id="resumeform">
     <table border="1" align="center">
         <!--第一行-->

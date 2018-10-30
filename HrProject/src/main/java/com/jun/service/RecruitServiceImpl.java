@@ -26,4 +26,8 @@ public class RecruitServiceImpl  implements RecruitService{
     public Recruit getRecruitByre_id(Recruit recruit) {
         return recruitDao.getRecruitByre_id(recruit);
     }
+
+    public Recruit getRecruitByre_poid(Recruit recruit) {
+        return recruitDao.getRecruitByre_poid(recruit);
+    }
 }

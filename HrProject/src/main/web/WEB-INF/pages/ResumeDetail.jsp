@@ -14,6 +14,18 @@
 <head>
     <base href="<%=basePath%>"/>
     <title>Title</title>
+    <style type="text/css">
+        td{
+            text-align:center;
+            width:80px;
+            height:30px;
+        }
+        input{
+            width:98%;
+            height:98%;
+        }
+
+    </style>
 </head>
 <body>
 <%Resume resume  = (Resume) request.getAttribute("resume");

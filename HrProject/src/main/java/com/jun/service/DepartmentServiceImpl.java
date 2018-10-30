@@ -22,4 +22,16 @@ public class DepartmentServiceImpl implements DepartmentService {
         return departmentDao.getDepartment(department);
     }
 
+    public Department getDepartmentByid(Department department) {
+        return departmentDao.getDepartmentByid(department);
+    }
+
+    public int updateDepartment(Department department) {
+        return departmentDao.updateDepartment(department);
+    }
+
+    public int deleteDepartment(Department department) {
+        return departmentDao.deleteDepartment(department);
+    }
+
 }
